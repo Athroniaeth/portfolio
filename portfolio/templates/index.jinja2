@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Titre par défaut{% endblock %}</title>
+    <link href="{{ url_for('static', path='output.css') }}" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    {% include "components/header.jinja2" %}
+
+    {% include "components/portfolio.jinja2" %}
+    {% include "components/step.jinja2" %}
+    {% include "components/step_2.jinja2" %}
+</body>
+</html>

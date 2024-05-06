@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "tailgrids": "^2.2.0"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i input.css -o ./portfolio/static/output.css --watch"
+  }
+}
