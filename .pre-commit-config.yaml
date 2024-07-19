@@ -10,7 +10,7 @@ repos:
         always_run: true
 
       - id: ruff-format
-        name: ruff
+        name: ruff-format
         entry: scripts\\pre-commit\\formatter.bat
         language: system
         types: [python]
@@ -18,7 +18,7 @@ repos:
         always_run: true
 
       - id: ruff-lint
-        name: ruff
+        name: ruff-lint
         entry: scripts\\pre-commit\\linter.bat
         language: system
         types: [ python ]
