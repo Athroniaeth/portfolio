@@ -9,11 +9,19 @@ repos:
         pass_filenames: false
         always_run: true
 
-      - id: ruff
+      - id: ruff-format
         name: ruff
-        entry: scripts\\pre-commit\\ruff.bat
+        entry: scripts\\pre-commit\\formatter.bat
         language: system
         types: [python]
+        pass_filenames: false
+        always_run: true
+
+      - id: ruff-lint
+        name: ruff
+        entry: scripts\\pre-commit\\linter.bat
+        language: system
+        types: [ python ]
         pass_filenames: false
         always_run: true
 
