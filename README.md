@@ -66,3 +66,66 @@ poetry run pre-commit install
 │   ├── __main__.py   # The entry point of the project
 └── tests             # The tests folder (pytest)
 ```
+
+## Tailgrids
+
+This project uses Tailgrids for the front-end. Tailgrids is a combination of Tailwind CSS and Gridsome. It is a simple and efficient way to create static websites.
+
+For replicate Tailwind CSS, use the following commands (or this [tutorial](https://tailgrids.com/docs/installation/html)):
+
+Install Tailwind and generate the config file.
+
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+Install TailGrids.
+
+```bash
+npm i tailgrids
+```
+
+Update the tailwind.config.js file with the TailGrids plugin.
+    
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.html", "./src/static/**/*.js"],
+  theme: {},
+  variants: {
+    extend: {},
+  },
+  plugins: [require("tailgrids/plugin")],
+};
+```
+
+Add Tailwind CSS directives to your CSS file. (path : `static/inputs.css`)
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Generate the CSS file with the build command.
+
+```javascript
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  },
+  "dependencies": {
+    "tailgrids": "^2.2.6"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./static/input.css -o ./static/output.css --watch"
+  }
+}
+```
+
+Then, we will have to run the build command:
+
+```bash
+npm run build
+```
