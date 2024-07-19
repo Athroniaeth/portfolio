@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "minecraft"
+version = "0.1.0"
+description = "The aim of this project is to develop a “complete” minecraft clone using the ursina 3D engine. The aim is to place the basic elements of the game in terms of blocks and add a “recent” map system like the “tectonic” mod, and make the game more lively like other minecraft mods."
+authors = ["Athroniaeth <pierre.chaumont@hotmail.fr>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ursina = "^7.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+ruff = "^0.5.3"
+bandit = "^1.7.9"
+pytest = "^8.2.2"
+coverage = "^7.6.0"
+mypy = "^1.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = ["-vv", '--doctest-modules']
+
+[tool.bandit]
+targets = ["src"]
+exclude_dirs = ["tests", "scripts"]
