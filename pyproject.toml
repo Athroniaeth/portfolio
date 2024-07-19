@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-ursina = "^7.0.0"
+fastapi = "^0.111.1"
 
 
 [tool.poetry.group.dev.dependencies]
