@@ -11,8 +11,10 @@
     {% include 'portfolio.jinja2'%}
 {% endwith %}
 
+{% with education=locale.education %}
+    {% include 'education.jinja2'%}
+{% endwith %}
 
-{% include 'education.jinja2' %}
 
 {% include 'contact.jinja2' %}
 

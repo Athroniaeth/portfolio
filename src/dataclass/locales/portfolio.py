@@ -10,8 +10,7 @@ class Portfolio(BaseModel):
     title: str = "Professional Portfolio"
     description: str = "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
 
-    # Create by default a list with one project
-    list_project: List["Project"] = Field(default_factory=lambda: [Project()])
+    list_project: List["Project"] = Field(default_factory=lambda: [Project() for _ in range(3)])
     button_previous: str = "Previous Project"
     button_next: str = "Next Project"
 

@@ -1451,6 +1451,11 @@ input[type="radio"]:checked ~ .box .circle background {
   background-color: rgb(55 88 249 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
 }

@@ -6,6 +6,7 @@ from typing import Union
 from pydantic import BaseModel
 
 from src.dataclass.locales.about import About
+from src.dataclass.locales.education import Education
 from src.dataclass.locales.header import Header
 from src.dataclass.locales.portfolio import Portfolio
 
@@ -15,7 +16,9 @@ class Locale(BaseModel):
 
     header: Header = Header()
     about: About = About()
+
     portfolio: Portfolio = Portfolio()
+    education: Education = Education()
 
     @classmethod
     def from_toml(cls, path: Union[str, PathLike]) -> "Locale":
