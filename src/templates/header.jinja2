@@ -110,12 +110,13 @@
                     <h1
                             class="mb-3 text-4xl font-bold leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[30px] xl:text-5xl"
                     >
-                        Devid Millar
+                        {{ config.first_name }} {{ config.last_name }}
                     </h1>
                     <p class="mb-5 flex items-center text-base font-medium">
                         <span class="text-dark dark:text-white"> {{ locale.header.title_job }}
                         </span>
-                        <span class="pl-3 text-body-color dark:text-dark-6"> Graphics Designer </span>
+                        <span class="pl-3 text-body-color dark:text-dark-6"> {{ config.profession }}
+                        </span>
                     </p>
                     <p class="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
                         {{ locale.header.description }}

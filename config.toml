@@ -1,0 +1,9 @@
+# Basic information for portfolio website
+first_name = "Pierre"
+last_name = "Chaumont"
+profession = "Data Scientist"
+email = "pierre.chaumont@hotmail.fr"
+phone = "+33 6 68 10 84 51"
+address = "Bordeaux, France"
+linkedin = "https://www.linkedin.com/in/pierre-chaumont-890aa417a/"
+github = "https://www.github.com/Athroniaeth"

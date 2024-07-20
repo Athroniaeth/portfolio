@@ -6,5 +6,5 @@ SOURCE_PATH = Path(__file__).parents[0]
 
 # Globals variables for this project
 STATIC_PATH = PROJECT_PATH / "static"
-LOCALES_PATH = PROJECT_PATH / "locales"
+LOCALES_PATH = PROJECT_PATH / "locales"  # Contain translations for the website
 TEMPLATES_PATH = SOURCE_PATH / "templates"
