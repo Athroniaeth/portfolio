@@ -22,7 +22,7 @@ class Project(BaseModel):
     """Project data for the portfolio page."""
 
     list_tags: List[str] = ["Template"]
-    title: str = "Play – Landing Page Template for Startup and SaaS"
+    title: str = "Play - Landing Page Template for Startup and SaaS"
     description: str = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"
     date: str = "06, September 2021"
     image: str = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"

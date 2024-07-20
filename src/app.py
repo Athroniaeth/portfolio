@@ -6,7 +6,7 @@ from starlette.responses import HTMLResponse
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from src import LOCALES_PATH, PROJECT_PATH, STATIC_PATH, TEMPLATES_PATH, CONFIG_PATH
+from src import CONFIG_PATH, LOCALES_PATH, STATIC_PATH, TEMPLATES_PATH
 from src.dataclass.info import Info
 from src.dataclass.locale import Locale
 
