@@ -1,11 +1,95 @@
 [header]
-link_home = "Home"
-link_about = "About"
+link_home = "Accueil"
+link_about = "À propos"
 link_portfolio = "Portfolio"
-button_contact = "Contact Us"
-title = "HELLO MY NAME IS"
+button_contact = "Contactez-nous"
+title = "BONJOUR, JE M'APPELLE"
 title_job = "Profession"
-description = "With TailGrids, business and students thrive together. Business can perfectly match their staffing to changing demand throughout the dayed."
-button_hire = "Hire Me Now!"
-button_resume = "Download CV"
-title_contact = "Contact With Me"
+description = "Avec TailGrids, les entreprises et les étudiants prospèrent ensemble. Les entreprises peuvent parfaitement adapter leur personnel à la demande changeante tout au long de la journée."
+button_hire = "Engagez-moi maintenant !"
+button_resume = "Télécharger CV"
+title_contact = "Contactez-moi"
+
+[about]
+sub_title = "Ce que nous offrons"
+title = "Nos meilleurs services"
+description = "Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre."
+
+[[about.list_skill]]
+title = "Solutions de marketing"
+description = "Lorem Ipsum est simplement du faux texte de l'industrie de l'impression."
+image = "images/default_skill.svg"
+
+[[about.list_skill]]
+title = "Solutions de marketing"
+description = "Lorem Ipsum est simplement du faux texte de l'industrie de l'impression."
+image = "images/default_skill.svg"
+
+[[about.list_skill]]
+title = "Solutions de marketing"
+description = "Lorem Ipsum est simplement du faux texte de l'industrie de l'impression."
+image = "images/default_skill.svg"
+
+[portfolio]
+sub_title = "Portfolio"
+title = "Portfolio professionnel"
+description = "Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre."
+button_previous = "Projet précédent"
+button_next = "Projet suivant"
+
+[[portfolio.list_project]]
+list_tags = ["Modèle"]
+title = "Play - Modèle de page de destination pour startup et SaaS"
+description = "Play est une page de destination gratuite pour les startups, SaaS, entreprises, applications et logiciels, basée sur Tailwind. Elle offre un design de haute qualité et tout ce dont vous avez besoin"
+date = "06 septembre 2021"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+
+[[portfolio.list_project]]
+list_tags = ["Modèle"]
+title = "Play - Modèle de page de destination pour startup et SaaS"
+description = "Play est une page de destination gratuite pour les startups, SaaS, entreprises, applications et logiciels, basée sur Tailwind. Elle offre un design de haute qualité et tout ce dont vous avez besoin"
+date = "06 septembre 2021"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+
+[[portfolio.list_project]]
+list_tags = ["Modèle"]
+title = "Play - Modèle de page de destination pour startup et SaaS"
+description = "Play est une page de destination gratuite pour les startups, SaaS, entreprises, applications et logiciels, basée sur Tailwind. Elle offre un design de haute qualité et tout ce dont vous avez besoin"
+date = "06 septembre 2021"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+
+[education]
+sub_title = "Notre portfolio"
+title = "Nos projets récents"
+description = "Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre."
+button_details = "Voir les détails"
+
+[[education.list_study]]
+tag = "Web Design"
+title = "Meilleur design et développement web en 2023"
+description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
+button_link = "https://www.google.com"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+
+[[education.list_study]]
+tag = "Web Design"
+title = "Meilleur design et développement web en 2023"
+description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
+button_link = "https://www.google.com"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+
+[[education.list_study]]
+tag = "Web Design"
+title = "Meilleur design et développement web en 2023"
+description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
+button_link = "https://www.google.com"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+
+[contact]
+sub_title = "Nous contacter"
+title = "ENTRER EN CONTACT AVEC NOUS"
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+title_address = "Notre emplacement"
+title_phone = "Numéro de téléphone"
+title_email = "Adresse e-mail"
+button_send = "Envoyer le message"
