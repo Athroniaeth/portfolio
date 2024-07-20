@@ -1,27 +1,40 @@
-<link href="/static/output.css" rel="stylesheet"/>
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of {{ config.first_name }} {{ config.last_name }}, {{ config.profession }} on {{ config.address }}">
+    <meta name="keywords" content="{{ config.profession }}, {{ config.first_name }}, {{ config.last_name }}">
+    <meta name="author" content="{{ config.first_name }} {{ config.last_name }}">
+    <title>Portfolio {{ config.first_name }} {{ config.last_name }}</title>
+    <link href="/static/output.css" rel="stylesheet"/>
+</head>
+<body>
+    {% include 'header.jinja2' %}
 
-{% include 'header.jinja2' %}
+    <main>
+        {% with about=locale.about %}
+            {% include 'about.jinja2' %}
+        {% endwith %}
 
+        {% with portfolio=locale.portfolio %}
+            {% include 'portfolio.jinja2' %}
+        {% endwith %}
 
-{% with about=locale.about %}
-    {% include 'about.jinja2' %}
-{% endwith %}
+        {% with education=locale.education %}
+            {% include 'education.jinja2' %}
+        {% endwith %}
 
+        {% with contact=locale.contact %}
+            {% include 'contact.jinja2' %}
+        {% endwith %}
+    </main>
 
-{% with portfolio=locale.portfolio %}
-    {% include 'portfolio.jinja2' %}
-{% endwith %}
+    <footer>
+        <!-- Footer content ici -->
+    </footer>
 
-
-{% with education=locale.education %}
-    {% include 'education.jinja2' %}
-{% endwith %}
-
-
-{% with contact=locale.contact %}
-    {% include 'contact.jinja2' %}
-{% endwith %}
-
-
-<script src="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/plugin.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/plugin.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>

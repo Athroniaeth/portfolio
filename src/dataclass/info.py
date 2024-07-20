@@ -24,6 +24,6 @@ class Info(BaseModel):
     def from_toml(cls, path: Union[str, PathLike]) -> "Info":
         """Load data from a TOML file."""
         path = Path(path)
-        content = path.read_text()
+        content = path.read_text(encoding="utf-8")
         data = tomllib.loads(content)
         return cls(**data)

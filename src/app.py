@@ -54,7 +54,12 @@ async def read_root_locale(request: Request, locale: str) -> HTMLResponse:
 
     config = get_info()
     locale_config = get_locale(locale)
-    return templates.TemplateResponse("index.jinja2", {"request": request, "locale": locale_config, "config": config})
+    return templates.TemplateResponse("index.jinja2", {
+        "request": request,
+        "locale": locale_config,
+        "config": config,
+        "lang": locale
+    })
 
 
 @app.exception_handler(404)
