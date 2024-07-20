@@ -25,14 +25,28 @@ date = "06, September 2021"
 image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
 
 
-[portfolio_personal]
+[portfolio]
 sub_title = "Portfolio"
 title = "Professional Portfolio"
 description = "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
 button_previous = "Previous Project"
 button_next = "Next Project"
 
-[[portfolio_personal.list_project]]
+[[portfolio.list_project]]
+list_tags = ["Template"]
+title = "Play Landing Page Template for Startup and SaaS"
+description = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"
+date = "06, September 2021"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+
+[[portfolio.list_project]]
+list_tags = ["Template"]
+title = "Play Landing Page Template for Startup and SaaS"
+description = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"
+date = "06, September 2021"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+
+[[portfolio.list_project]]
 list_tags = ["Template"]
 title = "Play Landing Page Template for Startup and SaaS"
 description = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"

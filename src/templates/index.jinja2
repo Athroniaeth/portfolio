@@ -1,22 +1,26 @@
 <link href="/static/output.css" rel="stylesheet"/>
 
-
 {% include 'header.jinja2' %}
+
 
 {% with about=locale.about %}
     {% include 'about.jinja2' %}
 {% endwith %}
 
+
 {% with portfolio=locale.portfolio %}
-    {% include 'portfolio.jinja2'%}
+    {% include 'portfolio.jinja2' %}
 {% endwith %}
+
 
 {% with education=locale.education %}
-    {% include 'education.jinja2'%}
+    {% include 'education.jinja2' %}
 {% endwith %}
 
 
-{% include 'contact.jinja2' %}
+{% with contact=locale.contact %}
+    {% include 'contact.jinja2' %}
+{% endwith %}
 
 
 <script src="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/plugin.min.js"></script>

@@ -1446,11 +1446,6 @@ input[type="radio"]:checked ~ .box .circle background {
   background-color: rgb(28 63 183 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-primary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1463,11 +1458,6 @@ input[type="radio"]:checked ~ .box .circle background {
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(55 88 249 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-70:hover {
