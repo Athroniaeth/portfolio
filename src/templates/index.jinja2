@@ -2,11 +2,15 @@
 
 
 {% include 'header.jinja2' %}
-{% include 'about.jinja2' %}
 
-{% with portfolio=locale.portfolio_professional %}
+{% with about=locale.about %}
+    {% include 'about.jinja2' %}
+{% endwith %}
+
+{% with portfolio=locale.portfolio %}
     {% include 'portfolio.jinja2'%}
 {% endwith %}
+
 
 {% include 'education.jinja2' %}
 

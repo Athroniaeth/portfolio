@@ -5,6 +5,7 @@ from typing import Union
 
 from pydantic import BaseModel
 
+from src.dataclass.locales.about import About
 from src.dataclass.locales.header import Header
 from src.dataclass.locales.portfolio import Portfolio
 
@@ -13,8 +14,8 @@ class Locale(BaseModel):
     """Index page HTML data (locale)."""
 
     header: Header = Header()
-    portfolio_personal: Portfolio = Portfolio()
-    portfolio_professional: Portfolio = Portfolio()
+    about: About = About()
+    portfolio: Portfolio = Portfolio()
 
     @classmethod
     def from_toml(cls, path: Union[str, PathLike]) -> "Locale":
