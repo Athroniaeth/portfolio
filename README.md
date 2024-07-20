@@ -119,7 +119,7 @@ Generate the CSS file with the build command.
     "tailgrids": "^2.2.6"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./static/input.css -o ./static/output.css --watch"
+    "build": "npx tailwindcss -i ./src/static/input.css -o ./src/static/output.css --watch"
   }
 }
 ```

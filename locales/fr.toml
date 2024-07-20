@@ -1,0 +1,11 @@
+[header]
+link_home = "Home"
+link_about = "About"
+link_portfolio = "Portfolio"
+button_contact = "Contact Us"
+title = "HELLO MY NAME IS"
+title_job = "Profession"
+description = "With TailGrids, business and students thrive together. Business can perfectly match their staffing to changing demand throughout the dayed."
+button_hire = "Hire Me Now!"
+button_resume = "Download CV"
+title_contact = "Contact With Me"
