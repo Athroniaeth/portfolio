@@ -6,7 +6,7 @@ from typing import Union
 from pydantic import BaseModel, EmailStr, Field, HttpUrl
 
 
-class Config(BaseModel):
+class Info(BaseModel):
     """Configuration containing user information."""
 
     first_name: str = "Pierre"
@@ -21,7 +21,7 @@ class Config(BaseModel):
     github: HttpUrl = Field(default="https://www.github.com/Athroniaeth")
 
     @classmethod
-    def from_toml(cls, path: Union[str, PathLike]) -> "Config":
+    def from_toml(cls, path: Union[str, PathLike]) -> "Info":
         """Load data from a TOML file."""
         path = Path(path)
         content = path.read_text()

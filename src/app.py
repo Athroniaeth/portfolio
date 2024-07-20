@@ -6,8 +6,8 @@ from starlette.responses import HTMLResponse
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from src import LOCALES_PATH, PROJECT_PATH, STATIC_PATH, TEMPLATES_PATH
-from src.dataclass.config import Config
+from src import LOCALES_PATH, PROJECT_PATH, STATIC_PATH, TEMPLATES_PATH, CONFIG_PATH
+from src.dataclass.info import Info
 from src.dataclass.locale import Locale
 
 app = FastAPI()
@@ -20,18 +20,18 @@ templates = Jinja2Templates(directory=TEMPLATES_PATH)
 
 
 @lru_cache(maxsize=1)
-def get_config(filename: str = "config.toml") -> Config:
+def get_info(filename: str = "info.toml") -> Info:
     """Load the config file (user information)."""
-    config_path = PROJECT_PATH / filename
+    config_path = CONFIG_PATH / filename
 
     if not config_path.exists():
         raise FileNotFoundError(f"Config file not found '{config_path}'")
 
-    return Config.from_toml(config_path)
+    return Info.from_toml(config_path)
 
 
 @lru_cache(maxsize=1)
-def get_locales(locale: str = "en") -> Locale:
+def get_locale(locale: str = "en") -> Locale:
     """Load all the locales (translations)."""
     locale_path = LOCALES_PATH / f"{locale}.toml"
 
@@ -52,8 +52,8 @@ async def read_root_locale(request: Request, locale: str) -> HTMLResponse:
     if len(locale) != 2:
         raise HTTPException(status_code=404, detail="Locale not found")
 
-    config = get_config()
-    locale_config = get_locales(locale)
+    config = get_info()
+    locale_config = get_locale(locale)
     return templates.TemplateResponse("index.jinja2", {"request": request, "locale": locale_config, "config": config})
 
 
