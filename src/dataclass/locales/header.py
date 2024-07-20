@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Extra
 
 
 class Header(BaseModel):
@@ -19,3 +19,6 @@ class Header(BaseModel):
     button_resume: str = "Download CV"
 
     title_contact: str = "Contact With Me"
+
+    class Config:
+        extra = Extra.forbid

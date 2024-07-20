@@ -1,3 +1,14 @@
-<link href="/static/output.css" rel="stylesheet" />
+<link href="/static/output.css" rel="stylesheet"/>
+
+<script src="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/plugin.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 {% include 'header.jinja2' %}
+
+{% with portfolio=locale.portfolio_professional %}
+    {% include 'portfolio.jinja2'%}
+{% endwith %}
+
+{% with portfolio=locale.portfolio_personal %}
+    {% include 'portfolio.jinja2'%}
+{% endwith %}
