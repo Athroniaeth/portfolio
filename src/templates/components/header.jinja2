@@ -12,7 +12,7 @@
          <div class="w-60 max-w-full px-4">
             <a href="javascript:void(0)" class="block w-full py-5">
             <img
-               src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
+               src="{{ url_for('static', path='images/logo.svg') }}"
                alt="logo"
                class="w-full block "
                />
@@ -122,7 +122,7 @@
                <ul class="flex flex-wrap items-center">
                   <li>
                      <a
-                        href="javascript:void(0)"
+                        href="mailto:{{ config.email }}"
                         class="inline-flex items-center justify-center rounded-md bg-primary py-3 px-7 text-center text-base font-medium text-white hover:bg-blue-dark"
                         >
                      {{ locale.header.button_hire }}
@@ -130,7 +130,7 @@
                   </li>
                   <li>
                      <a
-                        href="javascript:void(0)"
+                        href="{{ url_for('static', path='files/resume.pdf') }}" download="resume_{{ config.first_name }}_{{ config.last_name }}.pdf"
                         class="inline-flex items-center justify-center py-3 px-5 text-center text-base font-medium text-[#464646] hover:text-primary"
                         >
                         <span class="mr-2">

@@ -912,6 +912,10 @@ input[type="radio"]:checked ~ .box .circle background {
   height: 1px;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
