@@ -7,8 +7,6 @@ from pydantic import BaseModel
 
 from src.dataclass.locales.about import About
 from src.dataclass.locales.contact import Contact
-from src.dataclass.locales.education import Education
-from src.dataclass.locales.experience import Experience
 from src.dataclass.locales.header import Header
 from src.dataclass.locales.histories import Histories
 from src.dataclass.locales.portfolio import Portfolio

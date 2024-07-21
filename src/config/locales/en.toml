@@ -58,6 +58,7 @@ title = "Portfolio - FastAPI Template with TailwindCSS and Jinja2"
 description = "Portfolio is a FastAPI web application using TailwindCSS and Jinja2, following best practices for linting, formatting, pre-commit hooks, and security. It's the project where you are right now."
 date = "July 2024 - July 2024"
 image = "images/portfolio/portfolio.png"
+github_link = "https://github.com/Athroniaeth/portfolio"
 
 [[portfolio.list_project]]
 list_tags = ["Python", "PyTorch"]
@@ -65,6 +66,7 @@ title = "Chess AI - Experimentation of AI on Chess with PyTorch"
 description = "Personal project aimed at improving skills in machine learning and PyTorch. This repository contains my experiments with AI on the game of chess, using full neural network."
 date = "June 2024 - July 2024"
 image = "images/portfolio/chess-pytorch-ai.png"
+github_link = "https://github.com/Athroniaeth/chess_pytorch_ai"
 
 [[portfolio.list_project]]
 list_tags = ["Python", "Software Engineer"]
@@ -72,6 +74,7 @@ title = "Game of Life - Conway's Game with Pygame"
 description = "Personal project aimed at improving skills in software engineering, data manipulation with NumPy and exploring the “pygame-ce” library. This application contains intern console for modify the grid and the speed of the game."
 date = "May 2024 - June 2024"
 image = "images/portfolio/game-of-life.png"
+github_link = "https://github.com/Athroniaeth/game-of-life"
 
 [[portfolio.list_project]]
 list_tags = ["Python", "LangChain", "AI Generative"]
@@ -86,6 +89,7 @@ title = "PDF LangChain - Chatbot with RAG system on PDFs"
 description = "Personnal project aimed to develop a chatbot prototype to reinforce my skills in preparation for assignments related to LLM at Scalian. This application provides a web interface for conversing with the “Mistral v0.2 Instruct” language model, integrated with a RAG system for analyzing PDF documents."
 date = "May 2024 - May 2024"
 image = "images/portfolio/pdf-langchain.png"
+github_link = "https://github.com/Athroniaeth/pdf-langchain"
 
 [[portfolio.list_project]]
 list_tags = ["Python", "LangChain", "AI Generative"]
@@ -107,6 +111,7 @@ title = "Pytest lock - Lock the results of the function with Pytest"
 description = "Personal project aimed at create complete library, this library allows you to lock the results of the function with Pytest. It's useful for refactoring or testing. This library have CI/CD, documentation and tests."
 date = "December 2023 - February 2024"
 image = "images/portfolio/pytest-lock.png"
+github_link = "https://github.com/Athroniaeth/pytest-lock"
 
 [[portfolio.list_project]]
 list_tags = ["Python", "PyTorch", "Computer Vision"]
@@ -121,6 +126,7 @@ title = "Cliff Walking Sarsa - Sarsa algorithm with Gym"
 description = "School project aimed at creating a reinforcement learning model with the Gym library. The goal was to create a model that learns to navigate a grid world with a cliff, using the Sarsa algorithm."
 date = "July 2023 - July 2023"
 image = "images/portfolio/cliff-walking-sarsa.gif"
+github_link = "https://github.com/Athroniaeth/cliff-walking-sarsa"
 
 
 [[portfolio.list_project]]
@@ -129,6 +135,7 @@ title = "YoloV7 - WOTLK detection of hooks of fishing"
 description = "Personal project aimed at improving skills in computer vision and PyTorch. This repository contains my experiments on detection of fishing hooks with automation bot on World of Warcraft."
 date = "September 2022 - October 2022"
 image = "images/portfolio/yolo-wotlk-2.gif"
+github_link = "https://github.com/Athroniaeth/yolov7-test"
 
 
 [experience]

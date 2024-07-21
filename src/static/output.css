@@ -878,14 +878,6 @@ input[type="radio"]:checked ~ .box .circle background {
   margin-right: 1.5rem;
 }
 
-.mr-2\.5 {
-  margin-right: 0.625rem;
-}
-
-.mt-0\.5 {
-  margin-top: 0.125rem;
-}
-
 .block {
   display: block;
 }
@@ -1056,20 +1048,12 @@ input[type="radio"]:checked ~ .box .circle background {
   flex-wrap: wrap;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .items-center {
   align-items: center;
 }
 
 .items-stretch {
   align-items: stretch;
-}
-
-.justify-normal {
-  justify-content: normal;
 }
 
 .justify-end {
@@ -1090,12 +1074,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {

@@ -1,6 +1,6 @@
-from typing import List
+from typing import List, Optional
 
-from pydantic import BaseModel, Extra, Field
+from pydantic import BaseModel, Extra, Field, HttpUrl
 
 
 class Portfolio(BaseModel):
@@ -26,6 +26,7 @@ class Project(BaseModel):
     description: str = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"
     date: str = "06, September 2021"
     image: str = "images/portfolio/portfolio.png"
+    github_link: Optional[HttpUrl] = Field(default=None)
 
     class Config:
         extra = Extra.forbid

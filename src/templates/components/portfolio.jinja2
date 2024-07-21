@@ -66,9 +66,24 @@
                                         <p class="text-body-color mb-8 xl:mb-[76px] text-base text-justify">
                                             {{ project.description }}
                                         </p>
-                                        <span class="text-dark text-sm font-medium">
+
+                                    <div class="flex items-center gap-2 sm:gap-5 justify-center xl:right-auto xl:left-[70px] xl:bottom-24 xl:justify-start">
+
+
+
+                    <span class="text-dark text-sm font-medium">
                            {{ project.date }}
                            </span>
+                                        {% if project.github_link %}
+                                        <span class="block w-px h-7 bg-stroke "></span>
+                                                            <a href="{{  project.github_link }}" class="text-body-color hover:text-primary" target="_blank">
+                                    <img src="{{ url_for('static', path="images/icon_github.svg") }}" alt="" class="w-8">
+                                                            </a>
+                                        {% endif %}
+                                </div>
+
+
+
                                     </div>
                                     <div class="border border-gray-4 text-center">
                                         <div class="relative z-10 inline-block">
