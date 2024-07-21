@@ -137,14 +137,14 @@ title = "Experiences"
 description = "Here is the list of my professional experiences in relation to my skills"
 button_details = "View Company"
 
-[[experience.list_study]]
+[[experience.list_history]]
 tag = "Scalian"
 title = "Data Scientist"
 description = "At Scalian Bordeaux, I joined a Data team comprising a Tech Lead, a Technical Advisor and three Data Scientists. My role included understanding customer needs, contributing to documentation and code development."
 button_link = "https://www.scalian.com/"
 image = "images/default_education.png"
 
-[[experience.list_study]]
+[[experience.list_history]]
 tag = "Arkema"
 title = "Data Scientist"
 description = "I join purchasing department for work on SAP ERP automation and providing data support to add value. I regularly consulted with the business to understand their requirements and propose solutions that aligned with their expectations."
@@ -158,21 +158,21 @@ title = "Education"
 description = "Here is the list of my training courses in relation to my skills"
 button_details = "View Details"
 
-[[education.list_study]]
+[[education.list_history]]
 tag = "ESGI"
 title = "Master in Artificial Intelligence & Big Data"
 description = "The aim of ESGI's Artificial Intelligence and Big Data program is to train participants for a career in the field: data analyst, data scientist, but also CDO or Big Data and Distributed Systems Architect."
 button_link = "https://www.esgi.fr/programmes/intelligence-artificielle-big-data.html"
 image = "images/default_education.png"
 
-[[education.list_study]]
+[[education.list_history]]
 tag = "ESGI"
 title = "Bachelor in Software Architecture and PM"
 description = "The Software Architecture curriculum is designed to train future developers, specializing in the design, development and deployment of multiplatform IT applications."
 button_link = "https://www.esgi.fr/executive-bachelor/architecture-logiciels.html"
 image = "images/default_education.png"
 
-[[education.list_study]]
+[[education.list_history]]
 tag = "Sciences-U"
 title = "Advanced Technician Certificate IT services for organizations"
 description = "This BTS trains future IT professionals who will be able to manage the IT infrastructure of a company, develop software, manage projects, etc."

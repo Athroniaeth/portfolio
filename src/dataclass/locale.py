@@ -10,6 +10,7 @@ from src.dataclass.locales.contact import Contact
 from src.dataclass.locales.education import Education
 from src.dataclass.locales.experience import Experience
 from src.dataclass.locales.header import Header
+from src.dataclass.locales.histories import Histories
 from src.dataclass.locales.portfolio import Portfolio
 
 
@@ -20,8 +21,8 @@ class Locale(BaseModel):
     about: About = About()
 
     portfolio: Portfolio = Portfolio()
-    experience: Experience = Experience()
-    education: Education = Education()
+    experience: Histories = Histories()
+    education: Histories = Histories()
     contact: Contact = Contact()
 
     @classmethod

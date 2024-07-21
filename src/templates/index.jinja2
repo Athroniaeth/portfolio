@@ -24,12 +24,12 @@
             {% include 'components/portfolio.jinja2' %}
         {% endwith %}
 
-        {% with education=locale.experience, anchor="experience" %}
-            {% include 'components/education.jinja2' %}
+        {% with histories=locale.experience, anchor="experience" %}
+            {% include 'components/histories.jinja2' %}
         {% endwith %}
 
-        {% with education=locale.education, anchor="education" %}
-            {% include 'components/education.jinja2' %}
+        {% with histories=locale.education, anchor="education" %}
+            {% include 'components/histories.jinja2' %}
         {% endwith %}
 
         {% with contact=locale.contact, anchor="contact" %}

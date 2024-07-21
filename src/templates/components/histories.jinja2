@@ -6,15 +6,15 @@
             <div class="w-full px-4">
                 <div class="mx-auto mb-[60px] max-w-[510px] text-center">
                <span class="text-primary mb-2 block text-lg font-semibold">
-               {{ education.sub_title }}
+               {{ histories.sub_title }}
                </span>
                     <h2
                             class="text-dark mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]"
                     >
-                        {{ education.title }}
+                        {{ histories.title }}
                     </h2>
                     <p class="text-body-color text-base">
-                        {{ education.description }}
+                        {{ histories.description }}
                     </p>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                 x-data="
          {
          slides: [
-         {% for i in range(1, education.list_study|length + 1) %}
+         {% for i in range(1, histories.list_history|length + 1) %}
              '{{ i }}'{% if not loop.last %},{% endif %}
          {% endfor %}
          ],
@@ -41,7 +41,7 @@
                             class="flex-no-wrap snap xs:max-w-[368px] mx-auto flex h-auto w-full max-w-[300px] overflow-hidden transition-all sm:max-w-[508px] md:max-w-[630px] lg:max-w-[738px] 2xl:max-w-[850px]"
                             x-ref="carousel" lll
                     >
-                        {% for study in education.list_study %}
+                        {% for history in histories.list_history %}
                             <div
                                     class="xs:min-w-[368px] mx-auto h-full min-w-[300px] sm:min-w-[508px] md:min-w-[630px] lg:min-w-[738px] 2xl:min-w-[850px]"
                             >
@@ -55,19 +55,19 @@
                               <span
                                       class="mb-2 inline-block text-xs font-medium text-white"
                               >
-                              {{ study.tag }}
+                              {{ history.tag }}
                               </span>
                                             <h3 class="mb-5 text-[22px] leading-[26px] font-bold text-white">
-                                                {{ study.title }}
+                                                {{ history.title }}
                                             </h3>
                                             <p class="mb-[50px] text-sm text-white text-justify">
-                                                {{ study.description }}
+                                                {{ history.description }}
                                             </p>
                                             <a
-                                                    href="{{ study.button_link }}"
+                                                    href="{{ history.button_link }}"
                                                     class="inline-flex items-center text-sm font-medium text-white transition hover:opacity-70"
                                             >
-                                                {{ education.button_details }}
+                                                {{ histories.button_details }}
                                                 <span class="pl-2">
                                     <svg
                                             width="20"
@@ -88,7 +88,7 @@
                                     <div class="relative w-full">
                                         <div class="h-[250px] w-full md:h-full">
                                             <img
-                                                    src="{{ url_for('static', path=study.image) }}"
+                                                    src="{{ url_for('static', path=history.image) }}"
                                                     alt="image"
                                                     class="h-full w-full object-cover object-center"
                                             />
