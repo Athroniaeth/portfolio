@@ -8,6 +8,10 @@ import aiosmtplib
 from fastapi import FastAPI, HTTPException
 from fastapi.params import Form, Query
 from pydantic import EmailStr
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
+from slowapi.util import get_remote_address
 from starlette.requests import Request
 from starlette.responses import HTMLResponse
 from starlette.staticfiles import StaticFiles
@@ -24,6 +28,12 @@ app.mount("/static", StaticFiles(directory=STATIC_PATH), name="static")
 
 # Add jinja2 template
 templates = Jinja2Templates(directory=TEMPLATES_PATH)
+
+# Initialize the rate limiter
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+app.add_middleware(SlowAPIMiddleware)
 
 
 @lru_cache(maxsize=1)
@@ -59,11 +69,12 @@ async def send_email(
     email: str,
     phone: Optional[str],
     message: str,
-    smtp_host: str = "smtp.example.com",
-    smtp_port: int = 587,
-    smtp_username: str = None,
-    smtp_password: str = None,
-    smtp_start_tls: bool = True,
+
+    smtp_host: str,
+    smtp_port: int,
+    smtp_username: str,
+    smtp_password: str,
+    smtp_start_tls: bool,
 ):
     logging.debug(f"User info: '{name}', '{email}', '{phone}', '{message}'")
     logging.debug(f"SMTP info: '{smtp_host}', '{smtp_port}', '{smtp_username}', '{smtp_password}', '{smtp_start_tls}'")
@@ -88,6 +99,7 @@ async def send_email(
 
 
 @app.post("/send-email/", name="send-email")
+@limiter.limit("1/minute")
 async def submit_form(
     request: Request,
     name: str = Form(..., min_length=2, max_length=50),
