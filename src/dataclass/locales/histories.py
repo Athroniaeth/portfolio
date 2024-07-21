@@ -21,7 +21,7 @@ class History(BaseModel):
     """Study of school data (locale)."""
 
     tag: str = "Web Design"
-    list_tag: List[str] = Field(default_factory=lambda: ["Web Design", "Web Development"])
+    date: str = "September 2021 - September 2023"
     title: str = "Best Web Design & Development in 2023"
     description: str = (
         "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
