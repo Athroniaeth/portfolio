@@ -7,31 +7,31 @@
     <meta name="keywords" content="{{ config.profession }}, {{ config.first_name }}, {{ config.last_name }}">
     <meta name="author" content="{{ config.first_name }} {{ config.last_name }}">
     <title>Portfolio {{ config.first_name }} {{ config.last_name }}</title>
-    <link href="/static/output.css" rel="stylesheet"/>
+    <link href="{{ url_for('static', path='output.css') }}" rel="stylesheet">
 </head>
 <body>
-    {% include 'header.jinja2' %}
+    {% include 'components/header.jinja2' %}
 
     <main>
         {% with about=locale.about %}
-            {% include 'about.jinja2' %}
+            {% include 'components/about.jinja2' %}
         {% endwith %}
 
         {% with portfolio=locale.portfolio %}
-            {% include 'portfolio.jinja2' %}
+            {% include 'components/portfolio.jinja2' %}
         {% endwith %}
 
         {% with education=locale.education %}
-            {% include 'education.jinja2' %}
+            {% include 'components/education.jinja2' %}
         {% endwith %}
 
         {% with contact=locale.contact %}
-            {% include 'contact.jinja2' %}
+            {% include 'components/contact.jinja2' %}
         {% endwith %}
     </main>
 
     <footer>
-        {% include 'footer.jinja2' %}
+        {% include 'components/footer.jinja2' %}
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/plugin.min.js"></script>

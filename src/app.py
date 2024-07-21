@@ -59,4 +59,4 @@ async def read_root_locale(request: Request, locale: str) -> HTMLResponse:
 
 @app.exception_handler(404)
 async def not_found(request, exc):
-    return templates.TemplateResponse("404.jinja2", {"request": request})
+    return templates.TemplateResponse("errors/404.jinja2", {"request": request})
