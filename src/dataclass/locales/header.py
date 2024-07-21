@@ -7,6 +7,8 @@ class Header(BaseModel):
     link_home: str = "Home"
     link_about: str = "About"
     link_portfolio: str = "Portfolio"
+    link_education: str = "Education"
+    link_contact: str = "Contact"
 
     button_contact: str = "Contact Us"
 

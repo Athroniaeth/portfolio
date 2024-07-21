@@ -10,22 +10,24 @@
     <link href="{{ url_for('static', path='output.css') }}" rel="stylesheet">
 </head>
 <body>
+<header>
     {% include 'components/header.jinja2' %}
+</header>
 
     <main>
-        {% with about=locale.about %}
+        {% with about=locale.about, anchor="about"%}
             {% include 'components/about.jinja2' %}
         {% endwith %}
 
-        {% with portfolio=locale.portfolio %}
+        {% with portfolio=locale.portfolio, anchor="portfolio" %}
             {% include 'components/portfolio.jinja2' %}
         {% endwith %}
 
-        {% with education=locale.education %}
+        {% with education=locale.education, anchor="education" %}
             {% include 'components/education.jinja2' %}
         {% endwith %}
 
-        {% with contact=locale.contact %}
+        {% with contact=locale.contact, anchor="contact" %}
             {% include 'components/contact.jinja2' %}
         {% endwith %}
     </main>
