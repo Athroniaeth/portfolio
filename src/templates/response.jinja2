@@ -1,6 +1,6 @@
 <link href="{{ url_for('static', path='output.css') }}" rel="stylesheet">
 
-<!-- ====== Error 404 Section Start -->
+<!-- ====== POST Section Start -->
 <section
    class="relative z-10 flex items-center justify-center min-h-screen py-10 overflow-hidden bg-white "
    >
@@ -8,23 +8,24 @@
       <div class="mx-auto w-full max-w-[570px] text-center">
          <span
             class="text-[100px] font-extrabold text-primary sm:text-[150px]"
+            style="color: {{ response.color }}"
             >
-         404
+         {{ response.status_code }}
          </span>
          <h2
             class="mb-3 text-2xl font-bold text-dark sm:text-4xl"
             >
-            Sorry, the page can't be found
+            {{ response.title }}
          </h2>
          <p
             class="mx-auto mb-8 max-w-[490px] text-base text-body-color"
             >
-            The page you were looking for appears to have been moved, deleted or
-            does not exist.
+            {{ message if message else response.message }}
          </p>
          <a
             href="javascript:history.back()"
             class="px-8 py-3 text-base font-medium text-white rounded bg-primary hover:bg-opacity-90"
+            style="background-color: {{ response.color }}"
             >
          Back to homepage
          </a>

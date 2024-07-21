@@ -3,6 +3,9 @@ import sys
 from pathlib import Path
 
 import uvicorn
+from dotenv import load_dotenv
+
+from src import ENV_PATH
 
 # Automatically add the working directory
 path = Path(__file__).parents[1].absolute()
@@ -21,6 +24,8 @@ def main():
     Returns:
         int: The return code of the program.
     """
+    load_dotenv(dotenv_path=ENV_PATH)
+
     return_code = 0
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)

@@ -488,6 +488,11 @@ input[type="radio"]:checked ~ .box .circle background {
   -d-e-f-a-u-l-t: #3758F9;
 }
 
+.color:checked ~ label span {
+  width: 8px;
+  height: 8px;
+}
+
 .download-radio:checked ~ label .icon {
   opacity: 1;
 }
@@ -905,10 +910,6 @@ input[type="radio"]:checked ~ .box .circle background {
   height: 1.75rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-\[250px\] {
   height: 250px;
 }
@@ -953,10 +954,6 @@ input[type="radio"]:checked ~ .box .circle background {
   width: 75%;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-60 {
   width: 15rem;
 }
@@ -987,10 +984,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .w-px {
   width: 1px;
-}
-
-.w-7 {
-  width: 1.75rem;
 }
 
 .min-w-\[300px\] {
@@ -1426,11 +1419,6 @@ input[type="radio"]:checked ~ .box .circle background {
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(17 25 40 / var(--tw-text-opacity));
-}
-
-.text-dark-7 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-primary {

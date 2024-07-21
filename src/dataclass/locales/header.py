@@ -25,11 +25,13 @@ class Header(BaseModel):
 
     title_contact: str = "Contact With Me"
 
-    list_social: List['Social'] = Field(default_factory=lambda: [
-        Social(icon="images/icon_linkedin.svg"),
-        Social(icon="images/icon_github.svg"),
-        Social(icon="images/icon_malt.svg"),
-    ])
+    list_social: List["Social"] = Field(
+        default_factory=lambda: [
+            Social(icon="images/icon_linkedin.svg"),
+            Social(icon="images/icon_github.svg"),
+            Social(icon="images/icon_malt.svg"),
+        ]
+    )
 
     class Config:
         extra = Extra.forbid
