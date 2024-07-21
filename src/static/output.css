@@ -880,6 +880,10 @@ input[type="radio"]:checked ~ .box .circle background {
   height: 1.75rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-\[250px\] {
   height: 250px;
 }
@@ -910,10 +914,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .h-px {
   height: 1px;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .min-h-screen {
@@ -962,10 +962,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .min-w-\[300px\] {
   min-width: 300px;
-}
-
-.max-w-\[160px\] {
-  max-width: 160px;
 }
 
 .max-w-\[250px\] {
@@ -1826,10 +1822,6 @@ input[type="radio"]:checked ~ .box .circle background {
     padding-top: 180px;
   }
 
-  .lg\:text-left {
-    text-align: left;
-  }
-
   .lg\:text-right {
     text-align: right;
   }
@@ -1946,23 +1938,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
   .\32xl\:max-w-\[850px\] {
     max-width: 850px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-dark {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 25 40 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-dark-6 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
 
