@@ -1,4 +1,6 @@
-from pydantic import BaseModel, Extra
+from typing import List
+
+from pydantic import BaseModel, Extra, Field
 
 
 class Header(BaseModel):
@@ -22,6 +24,22 @@ class Header(BaseModel):
     button_resume: str = "Download CV"
 
     title_contact: str = "Contact With Me"
+
+    list_social: List['Social'] = Field(default_factory=lambda: [
+        Social(icon="images/icon_linkedin.svg"),
+        Social(icon="images/icon_github.svg"),
+        Social(icon="images/icon_malt.svg"),
+    ])
+
+    class Config:
+        extra = Extra.forbid
+
+
+class Social(BaseModel):
+    """Social link present in the header."""
+
+    icon: str = "images/icon_linkedin.svg"
+    link: str = "https://www.example.com"
 
     class Config:
         extra = Extra.forbid

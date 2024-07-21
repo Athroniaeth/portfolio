@@ -488,6 +488,31 @@ input[type="radio"]:checked ~ .box .circle background {
   -d-e-f-a-u-l-t: #3758F9;
 }
 
+.download-radio:checked ~ label .icon {
+  opacity: 1;
+}
+
+.checkbox-list:checked ~ label .icon {
+  opacity: 1;
+}
+
+.box-select-1:checked ~ label .box .icon {
+  opacity: 1;
+}
+
+.select-list:checked ~ label .icon background {
+  -d-e-f-a-u-l-t: #3758F9;
+}
+
+.tableCheckbox:checked ~ label .icon {
+  opacity: 1;
+}
+
+.tableCheckbox-2:checked ~ label .icon {
+  color: #fff;
+  opacity: 1;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -928,6 +953,10 @@ input[type="radio"]:checked ~ .box .circle background {
   width: 75%;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-60 {
   width: 15rem;
 }
@@ -958,6 +987,10 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .w-px {
   width: 1px;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .min-w-\[300px\] {
