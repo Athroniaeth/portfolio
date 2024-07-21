@@ -1802,6 +1802,11 @@ input[type="radio"]:checked ~ .box .circle background {
     padding-bottom: 120px;
   }
 
+  .lg\:py-\[80px\] {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .lg\:pb-\[120px\] {
     padding-bottom: 120px;
   }

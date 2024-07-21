@@ -1,0 +1,13 @@
+.anchor-5 {
+    display: block;
+    height: 0;
+    margin-top: -5vh; /* Ajustez cette valeur pour centrer l'ancre */
+    padding-top: 5vh; /* Correspond à la moitié de la hauteur de la fenêtre */
+}
+
+.anchor-10 {
+    display: block;
+    height: 0;
+    margin-top: -10vh; /* Ajustez cette valeur pour centrer l'ancre */
+    padding-top: 10vh; /* Correspond à la moitié de la hauteur de la fenêtre */
+}
