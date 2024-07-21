@@ -3,7 +3,7 @@ from os import PathLike
 from pathlib import Path
 from typing import Union
 
-from pydantic import BaseModel, EmailStr, Field, HttpUrl
+from pydantic import BaseModel, EmailStr
 
 
 class Info(BaseModel):
@@ -16,9 +16,6 @@ class Info(BaseModel):
     email: EmailStr = "pierre.chaumont@hotmail.fr"
     phone: str = "+33 6 68 10 84 51"
     address: str = "Bordeaux, France"
-
-    linkedin: HttpUrl = Field(default="https://www.linkedin.com/in/pierre-chaumont-890aa417a/")
-    github: HttpUrl = Field(default="https://www.github.com/Athroniaeth")
 
     @classmethod
     def from_toml(cls, path: Union[str, PathLike]) -> "Info":

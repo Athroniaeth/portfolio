@@ -27,7 +27,7 @@ class Study(BaseModel):
     )
 
     button_link: HttpUrl = "https://www.google.com"
-    image: HttpUrl = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+    image: str = "images/default_education.png"
 
     class Config:
         extra = Extra.forbid

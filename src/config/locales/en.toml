@@ -2,123 +2,188 @@
 link_home = "Home"
 link_about = "About"
 link_portfolio = "Portfolio"
-button_contact = "Contact Us"
+link_experience = "Experience"
+link_education = "Education"
+button_contact = "Contact Me"
+
 title = "HELLO MY NAME IS"
 title_job = "Profession"
-description = "With TailGrids, business and students thrive together. Business can perfectly match their staffing to changing demand throughout the dayed."
+description = "I'm a recent graduate of a Master's degree in Artificial Intelligence and Big Data at ESGI, currently based in Bordeaux. I'm ready to collaborate on local or remote Data Science / ML projects."
 button_hire = "Hire Me Now!"
 button_resume = "Download CV"
 title_contact = "Contact With Me"
 
+[[header.list_social]]
+icon="images/icon_linkedin.svg"
+link="https://www.linkedin.com/in/pierre-chaumont-890aa417a/"
+
+[[header.list_social]]
+icon="images/icon_github.svg"
+link="https://www.github.com/Athroniaeth"
+
+[[header.list_social]]
+icon="images/icon_malt.svg"
+link="https://www.malt.fr/profile/pierrechaumont"
+
 [about]
-sub_title = "What we Serve"
-title = "Our Best Services"
-description = "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+sub_title = "About Me"
+title = "Skills & Technologies"
+description = "My skills in analysis, data engineering and machine learning will enable me to meet your expectations."
 
 [[about.list_skill]]
-title = "Marketing Solutions"
-description = "Lorem Ipsum is simply dummy text of the printing and industry."
+title = "Advanced Python"
+description = "I have a robust background in Python programming and Software Engineering, having developed various projects such as web applications, machine learning models, and software libraries."
 image = "images/default_skill.svg"
 
 [[about.list_skill]]
-title = "Marketing Solutions"
-description = "Lorem Ipsum is simply dummy text of the printing and industry."
+title = "Data Skills"
+description = "My expertise includes data manipulation using Pandas, Polars, and SQL, data analysis with Matplotlib, Seaborn, and Plotly, and data visualization through Streamlit, Gradio, and Dash."
 image = "images/default_skill.svg"
 
 [[about.list_skill]]
-title = "Marketing Solutions"
-description = "Lorem Ipsum is simply dummy text of the printing and industry."
+title = "Machine Learning"
+description = "I am proficient in ML with PyTorch, with a focus on Computer Vision and Generative AI. I have created multiple projects in image classification, object detection, and language models."
 image = "images/default_skill.svg"
 
 [portfolio]
-sub_title = "Portfolio"
-title = "Professional Portfolio"
-description = "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+sub_title = "Projects"
+title = "Portfolio"
+description = "Here is the list of personal and professional projects to which I have contributed in relation to my skills as a data scientist."
 button_previous = "Previous Project"
 button_next = "Next Project"
 
 [[portfolio.list_project]]
-list_tags = ["Template"]
-title = "Play - Landing Page Template for Startup and SaaS"
-description = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"
-date = "06, September 2021"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+list_tags = ["Python", "FastAPI", "Software Engineer"]
+title = "Portfolio - FastAPI Template with TailwindCSS and Jinja2"
+description = "Portfolio is a FastAPI web application using TailwindCSS and Jinja2, following best practices for linting, formatting, pre-commit hooks, and security. It's the project where you are right now."
+date = "July 2024 - July 2024"
+image = "images/portfolio/portfolio.png"
 
 [[portfolio.list_project]]
-list_tags = ["Template"]
-title = "Play - Landing Page Template for Startup and SaaS"
-description = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"
-date = "06, September 2021"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+list_tags = ["Python", "PyTorch"]
+title = "Chess AI - Experimentation of AI on Chess with PyTorch"
+description = "Personal project aimed at improving skills in machine learning and PyTorch. This repository contains my experiments with AI on the game of chess, using full neural network."
+date = "June 2024 - July 2024"
+image = "images/portfolio/chess-pytorch-ai.png"
 
 [[portfolio.list_project]]
-list_tags = ["Template"]
-title = "Play - Landing Page Template for Startup and SaaS"
-description = "Play is free startup, saas, business, app, and software landing page page that is based on Tailwind. It comes with high-quality design and everything you need"
-date = "06, September 2021"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+list_tags = ["Python", "Software Engineer"]
+title = "Game of Life - Conway's Game with Pygame"
+description = "Personal project aimed at improving skills in software engineering, data manipulation with NumPy and exploring the “pygame-ce” library. This application contains intern console for modify the grid and the speed of the game."
+date = "May 2024 - June 2024"
+image = "images/portfolio/game-of-life.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "LangChain", "AI Generative"]
+title = "AI Eval - Generation of units tests with AI Generative"
+description = "Professional project from Scalian's mission. The goal was to develop a pipeline of LLM for the generation of unit tests on Python code. We used the LangChain library with HuggingFace to generate the tests."
+date = "April 2024 - June 2024"
+image = "images/portfolio/ai-eval.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "LangChain", "AI Generative"]
+title = "PDF LangChain - Chatbot with RAG system on PDFs"
+description = "Personnal project aimed to develop a chatbot prototype to reinforce my skills in preparation for assignments related to LLM at Scalian. This application provides a web interface for conversing with the “Mistral v0.2 Instruct” language model, integrated with a RAG system for analyzing PDF documents."
+date = "May 2024 - May 2024"
+image = "images/portfolio/pdf-langchain.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "LangChain", "AI Generative"]
+title = "Archeogit - Chatbot with RAG system on Gitlabs"
+description = "Professional project from Scalian's mission. The goal was to develop a chatbot to answer questions about the Gitlab platform on any project. We can use a greed_search to test our improvements on many cases (with embeddings) without human intervention."
+date = "April 2024 - April 2024"
+image = "images/portfolio/archeogit.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "Data Engineer", "SUMO", "COPERT"]
+title = "COQAIR - Calculation of CO2 emissions from trafic data"
+description = "Professional project from Scalian's mission. The goal was to develop a pipeline to calculate CO2 emissions (european norms) from traffic data in a city. We used the SUMO and COPERT libraries to calculate the emissions."
+date = "February 2024 - April 2024"
+image = "images/portfolio/coqair.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "Software Engineer"]
+title = "Pytest lock - Lock the results of the function with Pytest"
+description = "Personal project aimed at create complete library, this library allows you to lock the results of the function with Pytest. It's useful for refactoring or testing. This library have CI/CD, documentation and tests."
+date = "December 2023 - February 2024"
+image = "images/portfolio/pytest-lock.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "PyTorch", "Computer Vision"]
+title = "Géofoncier - OCR on handwritten documents"
+description = "Professional project from Scalian's mission. The goal was to develop an OCR model to extract information from handwritten documents. I was in team of 4 Data Scientists and I was production launch manager."
+date = "November 2023 - February 2024"
+image = "images/portfolio/geofoncier.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "Deep Reinforcement Learning"]
+title = "Cliff Walking Sarsa - Sarsa algorithm with Gym"
+description = "School project aimed at creating a reinforcement learning model with the Gym library. The goal was to create a model that learns to navigate a grid world with a cliff, using the Sarsa algorithm."
+date = "July 2023 - July 2023"
+image = "images/portfolio/cliff-walking-sarsa.gif"
+
+
+[[portfolio.list_project]]
+list_tags = ["Python", "PyTorch", "Computer Vision"]
+title = "YoloV7 - WOTLK detection of hooks of fishing"
+description = "Personal project aimed at improving skills in computer vision and PyTorch. This repository contains my experiments on detection of fishing hooks with automation bot on World of Warcraft."
+date = "September 2022 - October 2022"
+image = "images/portfolio/yolo-wotlk-2.gif"
 
 
 [experience]
-sub_title = "Our Portfolio"
-title = "Our Recent Projects"
-description = "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-button_details = "View Details"
+sub_title = "Jobs"
+title = "Experiences"
+description = "Here is the list of my professional experiences in relation to my skills"
+button_details = "View Company"
 
 [[experience.list_study]]
-tag = "Web Design"
-title = "Best Web Design & Development in 2023"
-description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
-button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+tag = "Scalian"
+title = "Data Scientist"
+description = "At Scalian Bordeaux, I joined a Data team comprising a Tech Lead, a Technical Advisor and three Data Scientists. My role included understanding customer needs, contributing to documentation and code development."
+button_link = "https://www.scalian.com/"
+image = "images/default_education.png"
 
 [[experience.list_study]]
-tag = "Web Design"
-title = "Best Web Design & Development in 2023"
-description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
-button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
-
-[[experience.list_study]]
-tag = "Web Design"
-title = "Best Web Design & Development in 2023"
-description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
-button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+tag = "Arkema"
+title = "Data Scientist"
+description = "I join purchasing department for work on SAP ERP automation and providing data support to add value. I regularly consulted with the business to understand their requirements and propose solutions that aligned with their expectations."
+button_link = "https://www.arkema.com"
+image = "images/default_education.png"
 
 
 [education]
-sub_title = "Our Portfolio"
-title = "Our Recent Projects"
-description = "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+sub_title = "Formation"
+title = "Education"
+description = "Here is the list of my training courses in relation to my skills"
 button_details = "View Details"
 
 [[education.list_study]]
-tag = "Web Design"
-title = "Best Web Design & Development in 2023"
-description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
-button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+tag = "ESGI"
+title = "Master in Artificial Intelligence & Big Data"
+description = "The aim of ESGI's Artificial Intelligence and Big Data program is to train participants for a career in the field: data analyst, data scientist, but also CDO or Big Data and Distributed Systems Architect."
+button_link = "https://www.esgi.fr/programmes/intelligence-artificielle-big-data.html"
+image = "images/default_education.png"
 
 [[education.list_study]]
-tag = "Web Design"
-title = "Best Web Design & Development in 2023"
-description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
-button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+tag = "ESGI"
+title = "Bachelor in Software Architecture and PM"
+description = "The Software Architecture curriculum is designed to train future developers, specializing in the design, development and deployment of multiplatform IT applications."
+button_link = "https://www.esgi.fr/executive-bachelor/architecture-logiciels.html"
+image = "images/default_education.png"
 
 [[education.list_study]]
-tag = "Web Design"
-title = "Best Web Design & Development in 2023"
-description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
-button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+tag = "Sciences-U"
+title = "Advanced Technician Certificate IT services for organizations"
+description = "This BTS trains future IT professionals who will be able to manage the IT infrastructure of a company, develop software, manage projects, etc."
+button_link = "https://www.sciences-u-lyon.fr/"
+image = "images/default_education.png"
 
 [contact]
-sub_title = "Contact Us"
-title = "GET IN TOUCH WITH US"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco"
-title_address = "Our Location"
+sub_title = "Contact Me"
+title = "GET IN TOUCH WITH ME"
+description = "You can contact me by phone or email, I'm looking for either a permanent position or a freelance assignment. I'm currently looking for assignments in Data Science or Machine Learning, if possible in computer vision or generative AI with LLM (Chatbot, RAG). I'm open to any suggestions."
+title_address = "My Location"
 title_phone = "Phone Number"
 title_email = "Email Address"
 button_send = "Send Message"

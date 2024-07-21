@@ -60,7 +60,7 @@
                                             <h3 class="mb-5 text-[22px] leading-[26px] font-bold text-white">
                                                 {{ study.title }}
                                             </h3>
-                                            <p class="mb-[50px] text-sm text-white">
+                                            <p class="mb-[50px] text-sm text-white text-justify">
                                                 {{ study.description }}
                                             </p>
                                             <a
@@ -88,7 +88,7 @@
                                     <div class="relative w-full">
                                         <div class="h-[250px] w-full md:h-full">
                                             <img
-                                                    src="{{ study.image }}"
+                                                    src="{{ url_for('static', path=study.image) }}"
                                                     alt="image"
                                                     class="h-full w-full object-cover object-center"
                                             />

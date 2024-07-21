@@ -69,21 +69,21 @@ tag = "Web Design"
 title = "Meilleur design et développement web en 2023"
 description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
 button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+image = "images/default_education.png"
 
 [[education.list_study]]
 tag = "Web Design"
 title = "Meilleur design et développement web en 2023"
 description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
 button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+image = "images/default_education.png"
 
 [[education.list_study]]
 tag = "Web Design"
 title = "Meilleur design et développement web en 2023"
 description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
 button_link = "https://www.google.com"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+image = "images/default_education.png"
 
 [contact]
 sub_title = "Nous contacter"

@@ -1,7 +1,6 @@
 import logging
 import os
 from email.message import EmailMessage
-from functools import lru_cache
 from typing import Optional
 
 import aiosmtplib
@@ -36,7 +35,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(SlowAPIMiddleware)
 
 
-@lru_cache(maxsize=1)
+# @lru_cache(maxsize=1)
 def get_info(filename: str = "info.toml") -> Info:
     """Load the config file (user information)."""
     config_path = CONFIG_PATH / filename
@@ -47,7 +46,7 @@ def get_info(filename: str = "info.toml") -> Info:
     return Info.from_toml(config_path)
 
 
-@lru_cache(maxsize=1)
+# @lru_cache(maxsize=1)
 def get_locale(locale: str = "en") -> Locale:
     """Load all the locales (translations)."""
     locale_path = LOCALES_PATH / f"{locale}.toml"
@@ -69,7 +68,6 @@ async def send_email(
     email: str,
     phone: Optional[str],
     message: str,
-
     smtp_host: str,
     smtp_port: int,
     smtp_username: str,
@@ -177,4 +175,4 @@ async def not_found(request, exc):  # noqa: F811
 
 @app.exception_handler(500)
 async def not_found(request, exc):  # noqa: F811
-    return templates.TemplateResponse("responses/500.jinja2", {"request": request, "message": exc.detail})
+    return templates.TemplateResponse("responses/500.jinja2", {"request": request, "message": f"{exc}"})
