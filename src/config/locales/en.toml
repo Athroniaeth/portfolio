@@ -59,6 +59,34 @@ date = "06, September 2021"
 image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
 
 
+[experience]
+sub_title = "Our Portfolio"
+title = "Our Recent Projects"
+description = "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+button_details = "View Details"
+
+[[experience.list_study]]
+tag = "Web Design"
+title = "Best Web Design & Development in 2023"
+description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
+button_link = "https://www.google.com"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+
+[[experience.list_study]]
+tag = "Web Design"
+title = "Best Web Design & Development in 2023"
+description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
+button_link = "https://www.google.com"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+
+[[experience.list_study]]
+tag = "Web Design"
+title = "Best Web Design & Development in 2023"
+description = "There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure."
+button_link = "https://www.google.com"
+image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-04/image-01.jpg"
+
+
 [education]
 sub_title = "Our Portfolio"
 title = "Our Recent Projects"

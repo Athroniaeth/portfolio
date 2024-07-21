@@ -8,6 +8,7 @@
     <meta name="author" content="{{ config.first_name }} {{ config.last_name }}">
     <title>Portfolio {{ config.first_name }} {{ config.last_name }}</title>
     <link href="{{ url_for('static', path='output.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='anchor.css') }}" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -21,6 +22,10 @@
 
         {% with portfolio=locale.portfolio, anchor="portfolio" %}
             {% include 'components/portfolio.jinja2' %}
+        {% endwith %}
+
+        {% with education=locale.experience, anchor="experience" %}
+            {% include 'components/education.jinja2' %}
         {% endwith %}
 
         {% with education=locale.education, anchor="education" %}
