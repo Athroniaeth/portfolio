@@ -1,7 +1,6 @@
-import logging
 import os
 from enum import StrEnum
-from typing import Tuple, Optional
+from typing import Optional, Tuple
 
 import typer
 import uvicorn
@@ -12,6 +11,8 @@ cli = typer.Typer(pretty_exceptions_show_locals=True, no_args_is_help=False, pre
 
 
 class Level(StrEnum):
+    """Level of logging to use."""
+
     DEBUG = "DEBUG"
     INFO = "INFO"
     WARNING = "WARNING"
@@ -20,6 +21,8 @@ class Level(StrEnum):
 
 
 class Environment(StrEnum):
+    """Environment to use (local or ovh cloud)."""
+
     DEVELOPMENT = "development"
     PRODUCTION = "production"
 
