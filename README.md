@@ -137,7 +137,7 @@ For installing from zero this project on OVH Cloud, you need to buy before
 
 ### OVH Cloud Instances
 
-1. Select '`Discovery`' instances D2-2 (5,50€/month)
+1. Select `Discovery` instances D2-2 (5,50€/month)
 2. Select localisation (by exemple 'Gravelines', 'GRA11')
 3. Select Ubuntu 24.04 LTS
 4. Select SSH key (create one if you don't have)
@@ -146,13 +146,13 @@ For installing from zero this project on OVH Cloud, you need to buy before
    - Set a passphrase (a good password)
    - Give to OVH the public key (by exemple 'C:\Users\USERNAME\.ssh\id_rsa.pub')
 5. Select one instance (valid default parameters)
-6. Select the '`Public network`'
+6. Select the `Public network`
 7. Select facturation (by exemple 'Hourly billing' if you want can stop the instance without paying)
 
 ### Connection to the instance
 
 In the list of instances, select the one you just created and click on name, you will be redirected to the instance page.
-Get '`Information of connection`' SSH at botom right of the page, you will have the IP address of the instance.
+Get `Information of connection` SSH at botom right of the page, you will have the IP address of the instance.
 
 ```bash
 Information of connection
@@ -165,7 +165,7 @@ Go to your terminal and run the command with the IP address of your instance.
 ssh ubuntu@57.128.65.49
 ```
 
-Validate the connection by typing '`yes`' and press '`Enter`'. (save the fingerprint)
+Validate the connection by typing `yes` and press `Enter`. (save the fingerprint)
 Then, enter the passphrase of your SSH key.
 
 Install python3 and pip3 on the instance.
@@ -413,9 +413,10 @@ sudo /home/ubuntu/portfolio/venv/bin/python -m uvicorn main:app --host 0.0.0.0 -
 ```bash
 which uvicorn
 ```
-```
->>> which uvicorn
-/home/ubuntu/.cache/pypoetry/virtualenvs/minecraft-knCDUtJW-py3.12/bin/uvicorn
+
+```bash
+which uvicorn
+"/home/ubuntu/.cache/pypoetry/virtualenvs/minecraft-knCDUtJW-py3.12/bin/uvicorn"
 ```
 
 ```bash

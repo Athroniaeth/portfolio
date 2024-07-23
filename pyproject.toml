@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "minecraft"
+name = "portfolio"
 version = "0.1.0"
 description = "The aim of this project is to develop a “complete” minecraft clone using the ursina 3D engine. The aim is to place the basic elements of the game in terms of blocks and add a “recent” map system like the “tectonic” mod, and make the game more lively like other minecraft mods."
 authors = ["Athroniaeth <pierre.chaumont@hotmail.fr>"]
