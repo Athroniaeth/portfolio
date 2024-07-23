@@ -185,6 +185,8 @@ mkdir portfolio
 cd portfolio
 ```
 
+### With Virtual Env
+
 Install the virtual environment, create it, and activate it.
 Warning, without venv, Ubuntu don't support pip3 install in the user folder.
 
@@ -198,6 +200,20 @@ Install the dependencies.
 
 ```bash
 pip install fastapi uvicorn
+```
+
+### With Poetry
+
+If virtual-env already use, doing these
+
+```bash
+which python3
+deactivate
+```
+
+```bash
+sudo apt install python3-poetry -y
+poetry shell
 ```
 
 ```bash
@@ -386,8 +402,24 @@ Before stop Nginx server, after that you can start FastAPI server.
 sudo systemctl stop nginx
 ```
 
+### Virtual Env
+
 ```bash
 sudo /home/ubuntu/portfolio/venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 443 --ssl-keyfile /etc/letsencrypt/live/pierrechaumont.fr/privkey.pem --ssl-certfile /etc/letsencrypt/live/pierrechaumont.fr/fullchain.pem &
+```
+
+### Poetry
+
+```bash
+which uvicorn
+```
+```
+>>> which uvicorn
+/home/ubuntu/.cache/pypoetry/virtualenvs/minecraft-knCDUtJW-py3.12/bin/uvicorn
+```
+
+```bash
+sudo /home/ubuntu/.cache/pypoetry/virtualenvs/minecraft-knCDUtJW-py3.12/bin/uvicorn src.app:app --host 0.0.0.0 --port 443 --ssl-keyfile /etc/letsencrypt/live/pierrechaumont.fr/privkey.pem --ssl-certfile /etc/letsencrypt/live/pierrechaumont.fr/fullchain.pem &
 ```
 
 With your browser, test these URLs:
