@@ -8,7 +8,7 @@ button_contact = "Contactez-moi"
 
 title = "BONJOUR, JE M'APPELLE"
 title_job = "Profession"
-description = "Je suis diplômé récent d'un Master en Intelligence Artificielle et Big Data à l'ESGI, actuellement basé à Bordeaux. Je suis prêt à collaborer sur des projets locaux ou à distance en Data Science / ML."
+description = "Je suis diplômé récent d'un Master en Intelligence Artificielle et Big Data à l'ESGI, actuellement basé à Bordeaux. Je suis prêt à collaborer sur des projets locaux ou à distance en Data Science / Machine Learning."
 button_hire = "Engagez-moi!"
 button_resume = "Télécharger CV"
 title_contact = "Contactez-moi"
@@ -33,17 +33,17 @@ description = "Mes compétences en analyse, ingénierie des données et apprenti
 [[about.list_skill]]
 title = "Python Avancé"
 description = "J'ai une solide expérience en programmation Python et en ingénierie logicielle, ayant développé divers projets tels que des applications, des modèles ML et des bibliothèques."
-image = "images/default_skill.svg"
+image = "images/default/skill.svg"
 
 [[about.list_skill]]
 title = "Compétences en Données"
 description = "Mon expertise inclut la manipulation de données avec Pandas, Polars et SQL, l'analyse de données avec Matplotlib, Seaborn et Plotly, et la visualisation de données via Streamlit, Gradio et Dash."
-image = "images/default_skill.svg"
+image = "images/default/skill.svg"
 
 [[about.list_skill]]
 title = "Apprentissage Automatique"
 description = "Je maîtrise le ML avec PyTorch, en mettant l'accent sur la vision par ordinateur et l'IA générative. J'ai réalisé plusieurs projets en classification d'images, détection d'objets et modèles de langage."
-image = "images/default_skill.svg"
+image = "images/default/skill.svg"
 
 [portfolio]
 sub_title = "Projets"
@@ -148,7 +148,7 @@ date = "nov. 2023 - mai 2024 (7 mois)"
 title = "Data Scientist"
 description = "Chez Scalian Bordeaux, j'ai rejoint une équipe de data composée d'un Tech Lead, d'un conseiller technique et de trois data scientists. Mon rôle comprenait la compréhension des besoins des clients, la contribution à la documentation et au développement de code."
 button_link = "https://www.scalian.com/"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [[experience.list_history]]
 tag = "Arkema"
@@ -156,7 +156,7 @@ date = "sept. 2021 - sept. 2023 (2 ans)"
 title = "Data Scientist"
 description = "J'ai rejoint le département des achats pour travailler sur l'automatisation de l'ERP SAP et fournir un support de données pour ajouter de la valeur. Je consultais régulièrement avec l'entreprise pour comprendre leurs exigences et proposer des solutions alignées sur leurs attentes."
 button_link = "https://www.arkema.com"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [education]
 sub_title = "Formation"
@@ -170,7 +170,7 @@ date = "sept. 2021 - août 2023 (2 ans)"
 title = "Master en Intelligence Artificielle & Big Data"
 description = "Le programme d'Intelligence Artificielle et Big Data de l'ESGI vise à former les participants à une carrière dans le domaine : data analyst, data scientist, mais aussi CDO ou architecte Big Data et systèmes distribués."
 button_link = "https://www.esgi.fr/programmes/intelligence-artificielle-big-data.html"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [[education.list_history]]
 tag = "ESGI"
@@ -178,7 +178,7 @@ date = "sept. 2020 - août 2021 (1 an)"
 title = "Bachelor en Architecture Logicielle et PM"
 description = "Le cursus d'architecture logicielle est conçu pour former les futurs développeurs, spécialisés dans la conception, le développement et le déploiement d'applications informatiques multiplateformes."
 button_link = "https://www.esgi.fr/executive-bachelor/architecture-logiciels.html"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [[education.list_history]]
 tag = "Sciences-U"
@@ -186,10 +186,10 @@ date = "sept. 2018 - août 2020 (2 ans)"
 title = "BTS Services Informatiques aux Organisations"
 description = "Ce BTS forme les futurs professionnels de l'informatique capables de gérer l'infrastructure informatique d'une entreprise, de développer des logiciels, de gérer des projets, etc."
 button_link = "https://www.sciences-u-lyon.fr/"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [contact]
-sub_title = "Contactez-moi"
+sub_title = "Contact"
 title = "CONTACTEZ MOI"
 description = "Vous pouvez me contacter par téléphone ou par email, je cherche soit un poste permanent, soit une mission freelance. Je recherche actuellement des missions en Data Science ou en Machine Learning, si possible en vision par ordinateur ou en IA générative avec LLM (Chatbot, RAG). Je suis ouvert à toute suggestion."
 title_address = "Mon Emplacement"

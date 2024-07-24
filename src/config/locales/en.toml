@@ -33,17 +33,17 @@ description = "My skills in analysis, data engineering and machine learning will
 [[about.list_skill]]
 title = "Advanced Python"
 description = "I have a robust background in Python programming and Software Engineering, having developed various projects such as web applications, machine learning models, and software libraries."
-image = "images/default_skill.svg"
+image = "images/default/skill.svg"
 
 [[about.list_skill]]
 title = "Data Skills"
 description = "My expertise includes data manipulation using Pandas, Polars, and SQL, data analysis with Matplotlib, Seaborn, and Plotly, and data visualization through Streamlit, Gradio, and Dash."
-image = "images/default_skill.svg"
+image = "images/default/skill.svg"
 
 [[about.list_skill]]
 title = "Machine Learning"
 description = "I am proficient in ML with PyTorch, with a focus on Computer Vision and Generative AI. I have created multiple projects in image classification, object detection, and language models."
-image = "images/default_skill.svg"
+image = "images/default/skill.svg"
 
 [portfolio]
 sub_title = "Projects"
@@ -150,7 +150,7 @@ date = "2023 nov - 2024 may (7 months)"
 title = "Data Scientist"
 description = "At Scalian Bordeaux, I joined a Data team comprising a Tech Lead, a Technical Advisor and three Data Scientists. My role included understanding customer needs, contributing to documentation and code development."
 button_link = "https://www.scalian.com/"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [[experience.list_history]]
 tag = "Arkema"
@@ -158,7 +158,7 @@ date = "2021 sept - 2023 sept (2 years)"
 title = "Data Scientist"
 description = "I join purchasing department for work on SAP ERP automation and providing data support to add value. I regularly consulted with the business to understand their requirements and propose solutions that aligned with their expectations."
 button_link = "https://www.arkema.com"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 
 [education]
@@ -173,7 +173,7 @@ date = "2021 sept - 2023 august (2 years)"
 title = "Master in Artificial Intelligence & Big Data"
 description = "The aim of ESGI's Artificial Intelligence and Big Data program is to train participants for a career in the field: data analyst, data scientist, but also CDO or Big Data and Distributed Systems Architect."
 button_link = "https://www.esgi.fr/programmes/intelligence-artificielle-big-data.html"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 
 [[education.list_history]]
@@ -182,7 +182,7 @@ date = "2020 sept - 2021 août (1 year)"
 title = "Bachelor in Software Architecture and PM"
 description = "The Software Architecture curriculum is designed to train future developers, specializing in the design, development and deployment of multiplatform IT applications."
 button_link = "https://www.esgi.fr/executive-bachelor/architecture-logiciels.html"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [[education.list_history]]
 tag = "Sciences-U"
@@ -190,7 +190,7 @@ date = "2018 sept - 2020 août (2 years)"
 title = "Advanced Technician Certificate IT services for organizations"
 description = "This BTS trains future IT professionals who will be able to manage the IT infrastructure of a company, develop software, manage projects, etc."
 button_link = "https://www.sciences-u-lyon.fr/"
-image = "images/default_education.png"
+image = "images/default/education.png"
 
 [contact]
 sub_title = "Contact Me"
