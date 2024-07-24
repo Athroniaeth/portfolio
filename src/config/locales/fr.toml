@@ -2,94 +2,197 @@
 link_home = "Accueil"
 link_about = "À propos"
 link_portfolio = "Portfolio"
-button_contact = "Contactez-nous"
+link_experience = "Expérience"
+link_education = "Éducation"
+button_contact = "Contactez-moi"
+
 title = "BONJOUR, JE M'APPELLE"
 title_job = "Profession"
-description = "Avec TailGrids, les entreprises et les étudiants prospèrent ensemble. Les entreprises peuvent parfaitement adapter leur personnel à la demande changeante tout au long de la journée."
-button_hire = "Engagez-moi maintenant !"
+description = "Je suis diplômé récent d'un Master en Intelligence Artificielle et Big Data à l'ESGI, actuellement basé à Bordeaux. Je suis prêt à collaborer sur des projets locaux ou à distance en Data Science / ML."
+button_hire = "Engagez-moi!"
 button_resume = "Télécharger CV"
 title_contact = "Contactez-moi"
 
+[[header.list_social]]
+icon="images/icon_linkedin.svg"
+link="https://www.linkedin.com/in/pierre-chaumont-890aa417a/"
+
+[[header.list_social]]
+icon="images/icon_github.svg"
+link="https://www.github.com/Athroniaeth"
+
+[[header.list_social]]
+icon="images/icon_malt.svg"
+link="https://www.malt.fr/profile/pierrechaumont"
+
 [about]
-sub_title = "Ce que nous offrons"
-title = "Nos meilleurs services"
-description = "Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre."
+sub_title = "À propos de moi"
+title = "Compétences"
+description = "Mes compétences en analyse, ingénierie des données et apprentissage automatique me permettront de répondre à vos attentes."
 
 [[about.list_skill]]
-title = "Solutions de marketing"
-description = "Lorem Ipsum est simplement du faux texte de l'industrie de l'impression."
+title = "Python Avancé"
+description = "J'ai une solide expérience en programmation Python et en ingénierie logicielle, ayant développé divers projets tels que des applications, des modèles ML et des bibliothèques."
 image = "images/default_skill.svg"
 
 [[about.list_skill]]
-title = "Solutions de marketing"
-description = "Lorem Ipsum est simplement du faux texte de l'industrie de l'impression."
+title = "Compétences en Données"
+description = "Mon expertise inclut la manipulation de données avec Pandas, Polars et SQL, l'analyse de données avec Matplotlib, Seaborn et Plotly, et la visualisation de données via Streamlit, Gradio et Dash."
 image = "images/default_skill.svg"
 
 [[about.list_skill]]
-title = "Solutions de marketing"
-description = "Lorem Ipsum est simplement du faux texte de l'industrie de l'impression."
+title = "Apprentissage Automatique"
+description = "Je maîtrise le ML avec PyTorch, en mettant l'accent sur la vision par ordinateur et l'IA générative. J'ai réalisé plusieurs projets en classification d'images, détection d'objets et modèles de langage."
 image = "images/default_skill.svg"
 
 [portfolio]
-sub_title = "Portfolio"
-title = "Portfolio professionnel"
-description = "Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre."
-button_previous = "Projet précédent"
-button_next = "Projet suivant"
+sub_title = "Projets"
+title = "Portfolio"
+description = "Voici la liste des projets personnels et professionnels auxquels j'ai contribué en lien avec mes compétences."
+button_previous = "Projet Précédent"
+button_next = "Projet Suivant"
 
 [[portfolio.list_project]]
-list_tags = ["Modèle"]
-title = "Play - Modèle de page de destination pour startup et SaaS"
-description = "Play est une page de destination gratuite pour les startups, SaaS, entreprises, applications et logiciels, basée sur Tailwind. Elle offre un design de haute qualité et tout ce dont vous avez besoin"
-date = "06 septembre 2021"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+list_tags = ["Python", "FastAPI", "Ingénieur Logiciel"]
+title = "Portfolio - Template FastAPI avec TailwindCSS et Jinja2"
+description = "Portfolio est une application web FastAPI utilisant TailwindCSS et Jinja2, suivant les meilleures pratiques pour le linting, le formatage, les hooks pre-commit, et la sécurité. C'est le projet où vous êtes actuellement."
+date = "juil. 2024 - juil. 2024"
+image = "images/portfolio/portfolio.png"
+github_link = "https://github.com/Athroniaeth/portfolio"
 
 [[portfolio.list_project]]
-list_tags = ["Modèle"]
-title = "Play - Modèle de page de destination pour startup et SaaS"
-description = "Play est une page de destination gratuite pour les startups, SaaS, entreprises, applications et logiciels, basée sur Tailwind. Elle offre un design de haute qualité et tout ce dont vous avez besoin"
-date = "06 septembre 2021"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+list_tags = ["Python", "PyTorch"]
+title = "Chess AI - Expérimentation de l'IA sur les Échecs avec PyTorch"
+description = "Projet personnel visant à améliorer les compétences en apprentissage automatique et PyTorch. Ce dépôt contient mes expériences avec l'IA sur le jeu d'échecs, utilisant un réseau de neurones complet."
+date = "juin 2024 - juil. 2024"
+image = "images/portfolio/chess-pytorch-ai.png"
+github_link = "https://github.com/Athroniaeth/chess_pytorch_ai"
 
 [[portfolio.list_project]]
-list_tags = ["Modèle"]
-title = "Play - Modèle de page de destination pour startup et SaaS"
-description = "Play est une page de destination gratuite pour les startups, SaaS, entreprises, applications et logiciels, basée sur Tailwind. Elle offre un design de haute qualité et tout ce dont vous avez besoin"
-date = "06 septembre 2021"
-image = "https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-03/image-01.svg"
+list_tags = ["Python", "Ingénieur Logiciel"]
+title = "Game of Life - Jeu de Conway avec Pygame"
+description = "Projet personnel visant à améliorer les compétences en ingénierie logicielle, manipulation de données avec NumPy et exploration de la bibliothèque 'pygame-ce'. Cette application contient une console interne pour modifier la grille et la vitesse du jeu."
+date = "mai 2024 - juin 2024"
+image = "images/portfolio/game-of-life.png"
+github_link = "https://github.com/Athroniaeth/game-of-life"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "LangChain", "IA Générative"]
+title = "AI Eval - Génération de tests unitaires avec IA Générative"
+description = "Projet professionnel de la mission Scalian. L'objectif était de développer une pipeline de LLM pour la génération de tests unitaires sur du code Python. Nous avons utilisé la bibliothèque LangChain avec HuggingFace pour générer les tests."
+date = "avr. 2024 - juin 2024"
+image = "images/portfolio/ai-eval.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "LangChain", "IA Générative"]
+title = "PDF LangChain - Chatbot avec système RAG sur PDFs"
+description = "Projet personnel visant à développer un prototype de chatbot pour renforcer mes compétences en préparation des missions liées aux LLM chez Scalian. Cette application offre une interface web pour converser avec le modèle de langage 'Mistral v0.2 Instruct', intégré avec un système RAG pour analyser des documents PDF."
+date = "mai 2024 - mai 2024"
+image = "images/portfolio/pdf-langchain.png"
+github_link = "https://github.com/Athroniaeth/pdf-langchain"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "LangChain", "IA Générative"]
+title = "Archeogit - Chatbot avec système RAG sur Gitlabs"
+description = "Projet professionnel de la mission Scalian. L'objectif était de développer un chatbot pour répondre aux questions sur la plateforme Gitlab pour tout projet. Nous pouvons utiliser une greed_search pour tester nos améliorations sur de nombreux cas (avec embeddings) sans intervention humaine."
+date = "avr. 2024 - avr. 2024"
+image = "images/portfolio/archeogit.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "Ingénieur Données", "SUMO", "COPERT"]
+title = "COQAIR - Calcul des émissions de CO2 à partir des données de trafic"
+description = "Projet professionnel de la mission Scalian. L'objectif était de développer une pipeline pour calculer les émissions de CO2 (normes européennes) à partir des données de trafic d'une ville. Nous avons utilisé les bibliothèques SUMO et COPERT pour calculer les émissions."
+date = "févr. 2024 - avr. 2024"
+image = "images/portfolio/coqair.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "Ingénieur Logiciel"]
+title = "Pytest lock - Verrouillez les résultats de la fonction avec Pytest"
+description = "Projet personnel visant à créer une bibliothèque complète, cette bibliothèque vous permet de verrouiller les résultats de la fonction avec Pytest. C'est utile pour le refactoring ou le test. Cette bibliothèque a CI/CD, documentation et tests."
+date = "déc. 2023 - févr. 2024"
+image = "images/portfolio/pytest-lock.png"
+github_link = "https://github.com/Athroniaeth/pytest-lock"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "PyTorch", "Vision par Ordinateur"]
+title = "Géofoncier - OCR sur documents manuscrits"
+description = "Projet professionnel de la mission Scalian. L'objectif était de développer un modèle OCR pour extraire des informations à partir de documents manuscrits. J'étais en équipe de 4 data scientists et j'étais responsable du lancement en production."
+date = "nov. 2023 - févr. 2024"
+image = "images/portfolio/geofoncier.png"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "Apprentissage par Renforcement Profond"]
+title = "Cliff Walking Sarsa - Algorithme Sarsa avec Gym"
+description = "Projet scolaire visant à créer un modèle d'apprentissage par renforcement avec la bibliothèque Gym. L'objectif était de créer un modèle qui apprend à naviguer dans un monde en grille avec une falaise, en utilisant l'algorithme Sarsa."
+date = "juil. 2023 - juil. 2023"
+image = "images/portfolio/cliff-walking-sarsa.gif"
+github_link = "https://github.com/Athroniaeth/cliff-walking-sarsa"
+
+[[portfolio.list_project]]
+list_tags = ["Python", "PyTorch", "Vision par Ordinateur"]
+title = "YoloV7 - Détection des hameçons de pêche sur WOTLK"
+description = "Projet personnel visant à améliorer les compétences en vision par ordinateur et PyTorch. Ce dépôt contient mes expériences sur la détection des hameçons de pêche avec un bot d'automatisation sur World of Warcraft."
+date = "sept. 2022 - oct. 2022"
+image = "images/portfolio/yolo-wotlk-2.gif"
+github_link = "https://github.com/Athroniaeth/yolov7-test"
+
+[experience]
+sub_title = "Emplois"
+title = "Expériences"
+description = "Voici la liste de mes expériences professionnelles en relation avec mes compétences"
+button_details = "Voir l'entreprise"
+
+[[experience.list_history]]
+tag = "Scalian"
+date = "nov. 2023 - mai 2024 (7 mois)"
+title = "Data Scientist"
+description = "Chez Scalian Bordeaux, j'ai rejoint une équipe de data composée d'un Tech Lead, d'un conseiller technique et de trois data scientists. Mon rôle comprenait la compréhension des besoins des clients, la contribution à la documentation et au développement de code."
+button_link = "https://www.scalian.com/"
+image = "images/default_education.png"
+
+[[experience.list_history]]
+tag = "Arkema"
+date = "sept. 2021 - sept. 2023 (2 ans)"
+title = "Data Scientist"
+description = "J'ai rejoint le département des achats pour travailler sur l'automatisation de l'ERP SAP et fournir un support de données pour ajouter de la valeur. Je consultais régulièrement avec l'entreprise pour comprendre leurs exigences et proposer des solutions alignées sur leurs attentes."
+button_link = "https://www.arkema.com"
+image = "images/default_education.png"
 
 [education]
-sub_title = "Notre portfolio"
-title = "Nos projets récents"
-description = "Il existe de nombreuses variations de passages de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre."
+sub_title = "Formation"
+title = "Éducation"
+description = "Voici la liste de mes formations en relation avec mes compétences"
 button_details = "Voir les détails"
 
-[[education.list_study]]
-tag = "Web Design"
-title = "Meilleur design et développement web en 2023"
-description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
-button_link = "https://www.google.com"
+[[education.list_history]]
+tag = "ESGI"
+date = "sept. 2021 - août 2023 (2 ans)"
+title = "Master en Intelligence Artificielle & Big Data"
+description = "Le programme d'Intelligence Artificielle et Big Data de l'ESGI vise à former les participants à une carrière dans le domaine : data analyst, data scientist, mais aussi CDO ou architecte Big Data et systèmes distribués."
+button_link = "https://www.esgi.fr/programmes/intelligence-artificielle-big-data.html"
 image = "images/default_education.png"
 
-[[education.list_study]]
-tag = "Web Design"
-title = "Meilleur design et développement web en 2023"
-description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
-button_link = "https://www.google.com"
+[[education.list_history]]
+tag = "ESGI"
+date = "sept. 2020 - août 2021 (1 an)"
+title = "Bachelor en Architecture Logicielle et PM"
+description = "Le cursus d'architecture logicielle est conçu pour former les futurs développeurs, spécialisés dans la conception, le développement et le déploiement d'applications informatiques multiplateformes."
+button_link = "https://www.esgi.fr/executive-bachelor/architecture-logiciels.html"
 image = "images/default_education.png"
 
-[[education.list_study]]
-tag = "Web Design"
-title = "Meilleur design et développement web en 2023"
-description = "Il existe de nombreuses variations de Lorem Ipsum disponibles, mais la majorité ont subi des modifications sous une forme ou une autre. Si vous comptez utiliser un passage de Lorem Ipsum, assurez-vous de sa pertinence."
-button_link = "https://www.google.com"
+[[education.list_history]]
+tag = "Sciences-U"
+date = "sept. 2018 - août 2020 (2 ans)"
+title = "BTS Services Informatiques aux Organisations"
+description = "Ce BTS forme les futurs professionnels de l'informatique capables de gérer l'infrastructure informatique d'une entreprise, de développer des logiciels, de gérer des projets, etc."
+button_link = "https://www.sciences-u-lyon.fr/"
 image = "images/default_education.png"
 
 [contact]
-sub_title = "Nous contacter"
-title = "ENTRER EN CONTACT AVEC NOUS"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
-title_address = "Notre emplacement"
-title_phone = "Numéro de téléphone"
-title_email = "Adresse e-mail"
-button_send = "Envoyer le message"
+sub_title = "Contactez-moi"
+title = "CONTACTEZ MOI"
+description = "Vous pouvez me contacter par téléphone ou par email, je cherche soit un poste permanent, soit une mission freelance. Je recherche actuellement des missions en Data Science ou en Machine Learning, si possible en vision par ordinateur ou en IA générative avec LLM (Chatbot, RAG). Je suis ouvert à toute suggestion."
+title_address = "Mon Emplacement"
+title_phone = "Numéro de Téléphone"
+title_email = "Adresse Email"
+button_send = "Envoyer le Message"
