@@ -27,9 +27,9 @@ class Header(BaseModel):
 
     list_social: List["Social"] = Field(
         default_factory=lambda: [
-            Social(icon="images/icon_linkedin.svg"),
-            Social(icon="images/icon_github.svg"),
-            Social(icon="images/icon_malt.svg"),
+            Social(icon="images/icon/linkedin.svg"),
+            Social(icon="images/icon/github.svg"),
+            Social(icon="images/icon/malt.svg"),
         ]
     )
 
@@ -40,7 +40,7 @@ class Header(BaseModel):
 class Social(BaseModel):
     """Social link present in the header."""
 
-    icon: str = "images/icon_linkedin.svg"
+    icon: str = "images/icon/linkedin.svg"
     link: str = "https://www.example.com"
 
     class Config:

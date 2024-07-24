@@ -14,15 +14,15 @@ button_resume = "Download CV"
 title_contact = "Contact With Me"
 
 [[header.list_social]]
-icon="images/icon_linkedin.svg"
+icon="images/icon/linkedin.svg"
 link="https://www.linkedin.com/in/pierre-chaumont-890aa417a/"
 
 [[header.list_social]]
-icon="images/icon_github.svg"
+icon="images/icon/github.svg"
 link="https://www.github.com/Athroniaeth"
 
 [[header.list_social]]
-icon="images/icon_malt.svg"
+icon="images/icon/malt.svg"
 link="https://www.malt.fr/profile/pierrechaumont"
 
 [about]
@@ -150,7 +150,7 @@ date = "2023 nov - 2024 may (7 months)"
 title = "Data Scientist"
 description = "At Scalian Bordeaux, I joined a Data team comprising a Tech Lead, a Technical Advisor and three Data Scientists. My role included understanding customer needs, contributing to documentation and code development."
 button_link = "https://www.scalian.com/"
-image = "images/default/education.png"
+image = "images/default/work.jpg"
 
 [[experience.list_history]]
 tag = "Arkema"
@@ -158,7 +158,7 @@ date = "2021 sept - 2023 sept (2 years)"
 title = "Data Scientist"
 description = "I join purchasing department for work on SAP ERP automation and providing data support to add value. I regularly consulted with the business to understand their requirements and propose solutions that aligned with their expectations."
 button_link = "https://www.arkema.com"
-image = "images/default/education.png"
+image = "images/default/work.jpg"
 
 
 [education]
