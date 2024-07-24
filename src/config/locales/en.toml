@@ -48,7 +48,7 @@ image = "images/default/skill.svg"
 [portfolio]
 sub_title = "Projects"
 title = "Portfolio"
-description = "Here is the list of personal and professional projects to which I have contributed in relation to my skills as a data scientist."
+description = "Here is the list of personal and professional projects to which I have contributed in relation to my skills."
 button_previous = "Previous Project"
 button_next = "Next Project"
 
