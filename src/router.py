@@ -22,7 +22,7 @@ templates = Jinja2Templates(directory=TEMPLATES_PATH)
 @router.get("/")
 async def read_root() -> HTMLResponse:
     # Default to English, redirection
-    return HTMLResponse(status_code=302, headers={"Location": "/en/"})
+    return HTMLResponse(status_code=302, headers={"Location": "/fr/"})
 
 
 @router.post("/send-email/", name="send-email")
