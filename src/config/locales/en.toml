@@ -134,7 +134,7 @@ list_tags = ["Python", "PyTorch", "Computer Vision"]
 title = "YoloV7 - WOTLK detection of hooks of fishing"
 description = "Personal project aimed at improving skills in computer vision and PyTorch. This repository contains my experiments on detection of fishing hooks with automation bot on World of Warcraft."
 date = "September 2022 - October 2022"
-image = "images/portfolio/yolo-wotlk-2.gif"
+image = "images/portfolio/yolo-wotlk.png"
 github_link = "https://github.com/Athroniaeth/yolov7-test"
 
 

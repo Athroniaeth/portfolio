@@ -133,7 +133,7 @@ list_tags = ["Python", "PyTorch", "Vision par Ordinateur"]
 title = "YoloV7 - Détection des hameçons de pêche sur WOTLK"
 description = "Projet personnel visant à améliorer les compétences en vision par ordinateur et PyTorch. Ce dépôt contient mes expériences sur la détection des hameçons de pêche avec un bot d'automatisation sur World of Warcraft."
 date = "sept. 2022 - oct. 2022"
-image = "images/portfolio/yolo-wotlk-2.gif"
+image = "images/portfolio/yolo-wotlk.png"
 github_link = "https://github.com/Athroniaeth/yolov7-test"
 
 [experience]
