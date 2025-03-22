@@ -1,0 +1,33 @@
+[project]
+name = "athrerank"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Athroniaeth", email = "pierre.chaumont@hotmail.fr" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "fastapi[standard]>=0.115.11",
+]
+
+[project.scripts]
+cli = "athrerank:cli"
+lint = "athrerank:lint"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest-asyncio>=0.25.3",
+    "pytest-cov>=6.0.0",
+    "pytest>=8.3.5",
+    "ruff>=0.11.2",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=mon_package --cov-report=term-missing"
