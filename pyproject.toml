@@ -11,6 +11,7 @@ dependencies = [
     "httpx>=0.28.1",
     "loguru>=0.7.3",
     "fastapi[standard]>=0.115.11",
+    "toml>=0.10.2",
 ]
 
 [project.scripts]
@@ -30,4 +31,4 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "--cov=mon_package --cov-report=term-missing"
+addopts = "--cov=src --cov-report=term-missing"
