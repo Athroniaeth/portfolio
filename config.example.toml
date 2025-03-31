@@ -1,0 +1,78 @@
+# config.toml
+[personal]
+name = "John Doe"
+title = "Développeur Full Stack"
+email = "contact@johndoe.dev"
+location = "Paris, France"
+availability = "Freelance / CDI"
+about_description = """
+Depuis plus de 5 ans, je me spécialise dans le développement web full stack.
+J'aime créer des applications intuitives qui résolvent des problèmes réels
+et offrent une expérience utilisateur exceptionnelle.
+
+Je m'adapte rapidement aux nouvelles technologies et je suis toujours à la
+recherche de défis qui me permettent d'élargir mes compétences et d'explorer
+de nouvelles possibilités dans le monde du développement.
+"""
+cv_url = "/cv.pdf"
+avatar_url = "https://github.com/shadcn.png"
+
+[social]
+github = "https://github.com/votre-user"
+linkedin = "https://linkedin.com/in/votre-user"
+twitter = "https://twitter.com/votre-user"
+
+[skills]
+frontend = ["HTML/CSS", "JavaScript", "TypeScript", "React", "Svelte", "Next.js"]
+backend = ["Node.js", "Express", "MongoDB", "PostgreSQL", "API RESTful"]
+tools = ["Git", "Docker", "Figma", "AWS", "Vercel", "CI/CD"]
+
+[[projects]]
+title = "Mon Portfolio"
+description = "Portfolio personnel développé avec SvelteKit"
+github_url = "https://github.com/votre-user/mon-portfolio"
+live_url = "https://mon-portfolio.vercel.app"
+technologies = ["Svelte", "TailwindCSS", "Vercel"]
+
+[[projects]]
+title = "Application de Gestion"
+description = "Application fullstack avec authentification"
+github_url = "https://github.com/votre-user/todo-app"
+live_url = "https://todo-app-example.netlify.app"
+technologies = ["React", "Node.js", "MongoDB"]
+
+[[projects]]
+title = "Librairie UI"
+description = "Collection de composants réutilisables"
+github_url = "https://github.com/votre-user/ui-library"
+technologies = ["TypeScript", "Storybook", "Jest"]
+
+[[projects]]
+title = "Clone d'Application"
+description = "Clone de [nom d'app] avec des fonctionnalités similaires"
+github_url = "https://github.com/votre-user/app-clone"
+technologies = ["Next.js", "Firebase", "TailwindCSS"]
+
+[[experience]]
+title = "Développeur Full Stack"
+subtitle = "Acme Inc."
+date = "2021 - Présent"
+location = "Paris, France"
+description = "Développement d'applications web avec Svelte et Node.js"
+type = "work"
+
+[[experience]]
+title = "Master en Informatique"
+subtitle = "Université de Technologie"
+date = "2019 - 2021"
+location = "Lyon, France"
+description = "Spécialisation en développement web et mobile"
+type = "education"
+
+[[experience]]
+title = "Licence en Informatique"
+subtitle = "Université de Technologie"
+date = "2016 - 2019"
+location = "Lyon, France"
+description = "Formation générale en informatique"
+type = "education"

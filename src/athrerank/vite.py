@@ -12,30 +12,33 @@ from athrerank import DIST_PATH, PROJECT_PATH, VITE_DEV_SERVER
 client = httpx.AsyncClient()
 
 
-def add_vite_router(
+def _add_vite_router_production(
     app: FastAPI,
-    dev: bool = False,
     dist_path: str = DIST_PATH,
+) -> FastAPI:
+    """Add the Vite route to the FastAPI app for development."""
+    logger.info("Serving static files from the 'dist' directory")
+
+    @app.get("/")
+    async def read_root():
+        """Return to index.html."""
+        index_path = PROJECT_PATH / "front" / "dist" / "index.html"
+        content = index_path.read_text(encoding="utf-8")
+        return HTMLResponse(content=content)
+
+    app.mount("/", StaticFiles(directory=dist_path), name="dist")
+    return app
+
+
+def _add_vite_router_development(
+    app: FastAPI,
     vite_dev_server: str = VITE_DEV_SERVER,
 ) -> FastAPI:
-    """Add the Vite router to the FastAPI app."""
-    # Serve static files from the 'dist' directory
-    if not dev:
-        logger.info("Serving static files from the 'dist' directory")
-
-        @app.get("/")
-        async def read_root():
-            """Return to index.html."""
-            index_path = PROJECT_PATH / "front" / "dist" / "index.html"
-            content = index_path.read_text(encoding="utf-8")
-            return HTMLResponse(content=content)
-
-        app.mount("/", StaticFiles(directory=dist_path), name="dist")
-        return app
-
+    """Add the Vite route to the FastAPI app for production."""
     logger.info("Proxying requests to Vite development server")
 
-    @app.get("/{full_path:path}")
+    # `include_in_schema=False` is used to exclude the route from the OpenAPI schema
+    @app.get("/{full_path:path}", include_in_schema=False)
     async def proxy_request(request: Request, full_path: str):
         # Build destination URL preserving the path and query params
         url = f"{vite_dev_server}/{full_path}"
@@ -56,6 +59,20 @@ def add_vite_router(
         )
 
     return app
+
+
+def add_vite_router(
+    app: FastAPI,
+    dev: bool = False,
+    dist_path: str = DIST_PATH,
+    vite_dev_server: str = VITE_DEV_SERVER,
+) -> FastAPI:
+    """Add the Vite router to the FastAPI app."""
+    # Serve static files from the 'dist' directory
+    if not dev:
+        return _add_vite_router_production(app, dist_path)
+
+    return _add_vite_router_development(app, vite_dev_server)
 
 
 def check_vite():
