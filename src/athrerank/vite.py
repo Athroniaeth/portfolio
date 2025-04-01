@@ -1,13 +1,15 @@
 import contextlib
+import json
+from pathlib import Path
 
 import httpx
 from fastapi import FastAPI
 from loguru import logger
 from starlette.requests import Request
-from starlette.responses import StreamingResponse, HTMLResponse
+from starlette.responses import StreamingResponse, HTMLResponse, RedirectResponse
 from starlette.staticfiles import StaticFiles
 
-from athrerank import DIST_PATH, PROJECT_PATH, VITE_DEV_SERVER
+from athrerank import DIST_PATH, VITE_DEV_SERVER
 
 client = httpx.AsyncClient()
 
@@ -16,17 +18,39 @@ def _add_vite_router_production(
     app: FastAPI,
     dist_path: str = DIST_PATH,
 ) -> FastAPI:
-    """Add the Vite route to the FastAPI app for development."""
+    """Add the Vite route to the FastAPI app for production."""
     logger.info("Serving static files from the 'dist' directory")
 
-    @app.get("/")
-    async def read_root():
-        """Return to index.html."""
-        index_path = PROJECT_PATH / "front" / "dist" / "index.html"
-        content = index_path.read_text(encoding="utf-8")
-        return HTMLResponse(content=content)
+    dist_path = Path(dist_path)
+    index_path = dist_path / "index.html"
+    manifest_path = dist_path / ".vite" / "manifest.json"
 
-    app.mount("/", StaticFiles(directory=dist_path), name="dist")
+    # Check if the index.html file exists
+    if not index_path.exists():
+        raise FileNotFoundError(f"Index path does not exist: {index_path}")
+
+    # Check if the manifest file exists
+    if manifest_path.exists():
+        content = manifest_path.read_text(encoding="utf-8")
+        manifest = json.loads(content)
+        logger.info(f"Loaded Vite manifest with {len(manifest)} entries")
+    else:
+        logger.warning("Vite manifest.json not found")
+
+    # Mount the static files directory on dist/assets
+    app.mount("/assets", StaticFiles(directory=f"{dist_path / 'assets'}"), name="assets")
+
+    # Route for serving the frontend application and handling manifest entries
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def serve_frontend(request: Request, full_path: str):
+        # Redirect if the path is in the manifest
+        if full_path in manifest:
+            asset_path = manifest[full_path]["file"]
+            return RedirectResponse(url=f"/{asset_path}")
+
+        html_content = index_path.read_text(encoding="utf-8")
+        return HTMLResponse(content=html_content)
+
     return app
 
 

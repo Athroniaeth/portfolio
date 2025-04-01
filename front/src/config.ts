@@ -80,7 +80,7 @@ export const config: Writable<Config> = writable(defaultConfig);
 // Fonction pour charger la configuration depuis l'API
 export async function loadConfig() {
     try {
-        const response = await fetch('http://localhost:8000/api/v1/config');
+        const response = await fetch('/api/v1/config');
         if (!response.ok) throw new Error('Erreur lors du chargement de la configuration');
         const data = await response.json();
         config.set(data as Config);

@@ -1,45 +1,42 @@
-# Use a Python image with uv pre-installed
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+FROM python:3.12-slim-bookworm
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-# Install the project into `/app`
+# Install the system dependencies
+RUN apt-get update && \
+    # Install nodejs for frontend
+    apt-get install -y nodejs npm \
+    curl nano # Install for debugging / manual editing
+
+# Set the working directory
 WORKDIR /app
 
-# Enable bytecode compilation
-ENV UV_COMPILE_BYTECODE=1
-
-# Copy from the cache instead of linking since it's a mounted volume
-ENV UV_LINK_MODE=copy
-
-# Install the project's dependencies using the lockfile and settings
-RUN --mount=type=cache,target=/root/.cache/uv \
-    --mount=type=bind,source=uv.lock,target=uv.lock \
-    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv sync --frozen --no-install-project --no-dev
-
-# Then, add the rest of the project source code and install it
-# Installing separately from its dependencies allows optimal layer caching
-COPY README.md /app/README.md
-COPY pyproject.toml /app/pyproject.toml
+# Add the lock file to the image (and necessary files for uv sync)
 COPY uv.lock /app/uv.lock
 
-# Create skeleton for uv sync
-RUN mkdir src && \
-    mkdir src/athrerank && \
-    touch src/athrerank/__init__.py
+# UV need of this files to sync the dependencies
+COPY README.md /app/README.md
+COPY pyproject.toml /app/pyproject.toml
+RUN mkdir /app/src/athrerank -p
+RUN touch /app/src/athrerank/__init__.py
 
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --no-dev
+# Sync the Python dependencies
+RUN uv sync --frozen --all-extras  --no-dev
 
-# Copy the rest of the source code
-COPY src /app/src
+# Add the frontend files
+COPY ./front /app/front
 
-# Place executables in the environment at the front of the path
-ENV PATH="/app/.venv/bin:$PATH"
+# Build the frontend
+RUN npm install --prefix /app/front
+RUN npm run build --prefix /app/front
 
-# Reset the entrypoint, don't invoke `uv`
-ENTRYPOINT []
+# Add the backend files
+COPY ./src /app/src/
 
-# Run the FastAPI application by default
-# Uses `fastapi dev` to enable hot-reloading when the `watch` sync occurs
-# Uses `--host 0.0.0.0` to allow access from outside the container
-# CMD ["fastapi", "dev", "--host", "0.0.0.0", "src/athrerank"]
+# Copy config files
+COPY ./config.toml /app/config.toml
+
+# Expose the port
+EXPOSE 8000
+
+# Run the Python application
+CMD ["uv", "run", "src/athrerank"]

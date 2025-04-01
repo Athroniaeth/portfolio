@@ -10,4 +10,7 @@ export default defineConfig({
       $lib: path.resolve("./src/lib"),
     },
   },
+  build : {
+    manifest: true,
+  }
 })

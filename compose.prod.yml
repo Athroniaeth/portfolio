@@ -1,9 +1,10 @@
 services:
-  web:
+  portfolio:
     # Build the image from the Dockerfile in the current directory
     build: .
-    env_file: .env.production
-    command: "python src/athrerank run --host ${HOST} --port ${PORT}"
+    env_file: .env
+    container_name: portfolio
+    command: "uv run src/athrerank run --host ${HOST} --port ${PORT}"
     # Host the FastAPI application on port 8000
     ports:
       - "${PORT:-8000}:${PORT:-8000}"
@@ -12,10 +13,10 @@ services:
       - traefik-network
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(${HOST})"
+      - "traefik.http.routers.portfolio.rule=Host(`${DOMAIN}`)"
       - "traefik.http.routers.portfolio.entrypoints=websecure"
       - "traefik.http.routers.portfolio.tls.certresolver=myresolver"
-      - "traefik.http.services.portfolio.loadbalancer.server.port=80"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=${PORT}"
 
 networks:
   traefik-network:
