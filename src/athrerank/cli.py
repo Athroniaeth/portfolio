@@ -7,8 +7,6 @@ import typer
 from loguru import logger
 from typer import Typer
 
-from athrerank import setup_mode
-
 
 class Level(StrEnum):
     """
@@ -99,6 +97,9 @@ def run(
     workers: int = 1,
 ):
     """Run the server in production mode."""
+
+    from athrerank import setup_mode
+
     setup_mode("prod")
 
     _run(
@@ -117,6 +118,8 @@ def dev(
 ):
     """Run the server in development mode."""
     from athrerank.vite import check_vite
+
+    from athrerank import setup_mode
 
     setup_mode("dev")
 

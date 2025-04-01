@@ -46,5 +46,6 @@ def cli():
 PROJECT_PATH = Path(__file__).parents[2]
 CONFIG_PATH = PROJECT_PATH / "config.toml"
 DIST_PATH = PROJECT_PATH / "front" / "dist"
+ASSETS_PATH = PROJECT_PATH / "front" / "src" / "assets"
 
 VITE_DEV_SERVER = "http://localhost:5173"

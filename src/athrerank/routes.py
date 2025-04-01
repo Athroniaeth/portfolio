@@ -3,6 +3,7 @@ from fastapi import APIRouter
 
 from athrerank import get_version, PROJECT_PATH
 
+
 router = APIRouter()
 
 
@@ -16,5 +17,5 @@ async def health_check():
 def get_config():
     """Get the configuration of the application."""
     config_path = PROJECT_PATH / "config.toml"
-    content = config_path.read_text(encoding="utf-8")
+    content = config_path.read_text()
     return toml.loads(content)
