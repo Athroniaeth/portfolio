@@ -16,8 +16,8 @@ COPY uv.lock /app/uv.lock
 # UV need of this files to sync the dependencies
 COPY README.md /app/README.md
 COPY pyproject.toml /app/pyproject.toml
-RUN mkdir /app/src/athrerank -p
-RUN touch /app/src/athrerank/__init__.py
+RUN mkdir /app/src/portfolio -p
+RUN touch /app/src/portfolio/__init__.py
 
 # Sync the Python dependencies
 RUN uv sync --frozen --all-extras  --no-dev

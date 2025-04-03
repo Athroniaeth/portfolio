@@ -1,7 +1,7 @@
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
 
-from athrerank.app import create_app
+from portfolio.app import create_app
 
 
 @pytest_asyncio.fixture

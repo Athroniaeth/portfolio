@@ -3,7 +3,7 @@ services:
     # Build the image from the Dockerfile in the current directory
     build: .
     env_file: .env
-    command: "uv run src/athrerank run --host ${HOST} --port ${PORT}"
+    command: "uv run src/portfolio run --host ${HOST} --port ${PORT}"
     # Host the FastAPI application on port 8000
     ports:
       - "${PORT:-8000}:${PORT:-8000}"
