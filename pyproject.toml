@@ -1,5 +1,5 @@
 [project]
-name = "athrerank"
+name = "portfolio"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -15,8 +15,8 @@ dependencies = [
 ]
 
 [project.scripts]
-cli = "athrerank:cli"
-lint = "athrerank:lint"
+cli = "portfolio:cli"
+lint = "portfolio:lint"
 
 [build-system]
 requires = ["hatchling"]

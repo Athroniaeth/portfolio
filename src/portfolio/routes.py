@@ -1,7 +1,7 @@
 import toml
 from fastapi import APIRouter
 
-from portfolio import get_version, PROJECT_PATH
+from portfolio import get_version, CONFIG_PATH
 
 
 router = APIRouter()
@@ -16,6 +16,5 @@ async def health_check():
 @router.get("/api/v1/config")
 def get_config():
     """Get the configuration of the application."""
-    config_path = PROJECT_PATH / "config.toml"
-    content = config_path.read_text()
+    content = CONFIG_PATH.read_text()
     return toml.loads(content)

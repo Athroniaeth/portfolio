@@ -32,11 +32,8 @@ RUN npm run build --prefix /app/front
 # Add the backend files
 COPY ./src /app/src/
 
-# Copy config files
-COPY ./config.toml /app/config.toml
-
 # Expose the port
 EXPOSE 8000
 
 # Run the Python application
-CMD ["uv", "run", "src/athrerank"]
+CMD ["uv", "run", "src/portfolio"]

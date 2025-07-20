@@ -1,5 +1,7 @@
 services:
   portfolio:
+    volumes:
+      - ./data:/app/data
     # Build the image from the Dockerfile in the current directory
     build: .
     env_file: .env
@@ -9,15 +11,15 @@ services:
     ports:
       - "${PORT:-8000}:${PORT:-8000}"
     restart: unless-stopped
-    networks:
-      - traefik-network
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(`${DOMAIN}`)"
-      - "traefik.http.routers.portfolio.entrypoints=websecure"
-      - "traefik.http.routers.portfolio.tls.certresolver=myresolver"
-      - "traefik.http.services.portfolio.loadbalancer.server.port=${PORT}"
+    # networks:
+    #   - traefik-network
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.portfolio.rule=Host(`${DOMAIN}`)"
+    #   - "traefik.http.routers.portfolio.entrypoints=websecure"
+    #   - "traefik.http.routers.portfolio.tls.certresolver=myresolver"
+    #   - "traefik.http.services.portfolio.loadbalancer.server.port=${PORT}"
 
-networks:
-  traefik-network:
-    external: true
+# networks:
+#   traefik-network:
+#     external: true

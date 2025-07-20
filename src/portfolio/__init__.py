@@ -44,7 +44,8 @@ def cli():
 
 # Global variables of the project
 PROJECT_PATH = Path(__file__).parents[2]
-CONFIG_PATH = PROJECT_PATH / "config.toml"
+DATA_PATH = PROJECT_PATH / "data"
+CONFIG_PATH = DATA_PATH / "config.toml"
 DIST_PATH = PROJECT_PATH / "front" / "dist"
 ASSETS_PATH = PROJECT_PATH / "front" / "src" / "assets"
 
