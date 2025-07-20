@@ -2,6 +2,7 @@ services:
   portfolio:
     volumes:
       - ./data:/app/data
+      - ./data/files:/app/data/files
     # Build the image from the Dockerfile in the current directory
     build: .
     env_file: .env

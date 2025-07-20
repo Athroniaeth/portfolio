@@ -6,12 +6,11 @@ from loguru import logger
 from starlette.middleware.cors import CORSMiddleware
 from starlette.staticfiles import StaticFiles
 
-from portfolio import is_dev, get_version, ASSETS_PATH
+from portfolio import is_dev, get_version, DATA_PATH
 from portfolio.routes import router
 from portfolio.vite import add_vite_router
 
-FILES_PATH = ASSETS_PATH / "private" / "files"
-
+FILES_PATH = DATA_PATH / "files"
 
 @asynccontextmanager
 async def _lifespan(app: FastAPI):
