@@ -8,9 +8,6 @@ services:
     env_file: .env
     container_name: portfolio
     command: "uv run src/portfolio run --host ${HOST} --port ${PORT}"
-    # Host the FastAPI application on port 8000
-    ports:
-      - "${PORT:-8000}:${PORT:-8000}"
     restart: unless-stopped
     # networks:
     #   - traefik-network
