@@ -1,3 +1,15 @@
+<svelte:head>
+  <script
+    defer
+    data-domain="localhost"
+    src="https://plausible.athroniaeth.cloud/js/script.js">
+  </script>
+  <script>
+    window.plausible = window.plausible || function() {
+      (window.plausible.q = window.plausible.q || []).push(arguments)
+    }
+  </script>
+</svelte:head>
 <script lang="ts">
     import "./app.css";
     import * as Card from "$lib/components/ui/card/index.js";

@@ -39,7 +39,7 @@ def create_app(
     app.mount("/files", StaticFiles(directory=FILES_PATH), name="files")
 
     # Add CORS middleware to allow cross-origin requests
-    allow_origins = ["http://localhost:5173"]
+    allow_origins = ["http://localhost:5173", "https://plausible.athroniaeth.cloud"]
     allow_origins.append(f"https://{os.getenv('DOMAIN')}") if os.getenv("DOMAIN") else ...
     logger.info(f"Allowed origins: {allow_origins}")
 
